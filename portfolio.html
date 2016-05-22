@@ -26,8 +26,10 @@
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif]-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="publicationCtrl.js"></script>
 </head>
-    <body>
+    <body ng-app="publicationApp" ng-controller="publicationCtrl">
         <div id="utter-wrapper" class="color-skin-1">
           <header id="header" class="header">
               <nav class="navbar navbar-default navbar-static-top" role="navigation">
@@ -45,7 +47,7 @@
                       <!-- Collect the nav links, forms, and other content for toggling -->
                       <div class="collapse navbar-collapse navbar-ex1-collapse">
                           <ul class="nav navbar-nav">
-                              <li class="dropdown active">
+                              <li class="dropdown">
                                   <a href="index.html">Home</a>
                               </li>
                               <li class="dropdown">
@@ -87,7 +89,7 @@
                                       <li><a href="contact-2.html">Contact 2</a></li>
                                   </ul> -->
                               </li>
-                              <li class="dropdown">
+                              <li class="dropdown active">
                                 <a href="portfolio.html">Projects</a>
                               </li>
                           </ul>
