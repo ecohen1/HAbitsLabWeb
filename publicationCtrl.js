@@ -176,7 +176,64 @@ app.controller("publicationCtrl", function($scope) {
       {"title": "Artificial spider: eight-legged arachnid and autonomous learning of locomotion",
       "conference": "SPIE-Unmanned Systems Technology VIII 2006",
       "description": "Evolution has produced organisms whose locomotive agility and adaptivity mock the difficulty faced by robotic scientists.",
-      "src": "http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=1286440"}
+      "src": "http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=1286440"},
+
+      {"title": "Monitoring Eating Habits using a Piezoelectric Sensor-Based Necklace",
+      "conference": "Elsevier Computers in Biology and Medicine",
+      "description": "Abstract Maintaining appropriate levels of food intake and developing regularity in eating habits is crucial to weight loss and the preservation of a healthy lifestyle.",
+      "src": "http://www.sciencedirect.com/science/article/pii/S0010482515000086"},
+
+      {"title": "Non-Invasive Detection of Medication Adherence using a Digital Smart Necklace",
+      "conference": "Pervasive Computing and Communication Workshops (PerCom Workshops)",
+      "designing": "Studies have revealed that non-adherence to prescribed medication can lead to hospital readmissions, clinical complications, and a host of other negative patient outcomes.",
+      "src": "http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7134061"},
+
+      {"title": "Audio-Based Detection and Evaluation of Eating Behavior using the Smartwatch Platform",
+      "conference": "Elsevier Computers in Biology and Medicine",
+      "description": "Abstract In recent years, smartwatches have emerged as a viable platform for a variety of medical and health-related applications.",
+      "src": "http://www.sciencedirect.com/science/article/pii/S0010482515002553"},
+
+      {"title": "Recognition of Nutrition-Intake using Time-Frequency Decomposition in a Wearable Necklace using a Piezoelectric Sensor",
+      "conference": "IEEE Sensors Journal",
+      "description": "Food intake levels, hydration, ingestion rate, and dietary choices are all factors known to impact the risk of obesity.",
+      "src": "http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7039196"},
+
+      {"title": "Remote Health Monitoring Outcome Success Prediction using First Month Intervention Data",
+      "conference": "IEEE Journal of Biomedical and Health Informatics",
+      "description": "Remote health monitoring (RHM) systems are becoming more widely adopted by clinicians and hospitals to remotely monitor and communicate with patients while optimizing clinician time, decreasing hospital costs, and improving quality of care.",
+      "src": "http://europepmc.org/abstract/med/26780823"},
+
+      {"title": "A Wearable Sensor System for Medication Adherence Prediction",
+      "conference": "Elsevier Artificial Intelligence in Medicine.",
+      "description": "Objective Studies have revealed that non-adherence to prescribed medication can lead to hospital readmissions, clinical complications, and other negative patient outcomes.",
+      "src": "http://www.sciencedirect.com/science/article/pii/S0933365715300580"}
+    ];
+
+    $scope.publications5 = [
+      {"title": "A comparison of piezoelectric-based inertial sensing and audio-based detection of swallows",
+      "description": "Obesity Medicine",
+      "conference": "Background Prior research has shown a correlation between poor dietary habits and countless negative health outcomes such as heart disease, diabetes, and certain cancers.",
+      "src": "http://www.sciencedirect.com/science/article/pii/S2451847615300105"},
+
+      {"title": "Dynamic Computation Offloading for Low-Power Wearable Health Monitoring Systems",
+      "description": "",
+      "conference": "IEEE Transactions on Biomedical Engineering",
+      "src": ""},
+
+      {"title": "Probabilistic Segmentation of Time-Series Audio Signals using Support Vector Machines",
+      "description": "Abstract To allow health tracking, patient monitoring, and provide timely user interventions, sensor signals from body sensor networks need to be processed in real-time.",
+      "conference": "Elsevier Microprocessors and Microsystems",
+      "src": "http://www.sciencedirect.com/science/article/pii/S0141933116300394"},
+
+      {"title": "A Survey of Electronic Methods for Non-Invasive Detection of Eating Behavior",
+      "description": "",
+      "conference": "IEEE Pervasive Computing",
+      "src": ""},
+
+      {"title": "Non-invasive nutrition monitor",
+      "description": "An apparatus includes a sensor configured to detect a variable characteristic, the variation of the characteristic including variation indicative of an individual swallowing when the sensor is positioned in a neck area of the individual.",
+      "conference": "Patent: US 20160026767 A1",
+      "src": "http://www.google.com/patents/US20160026767"}
     ]
 
 });
