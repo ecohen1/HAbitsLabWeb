@@ -26,80 +26,11 @@
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif]-->
-    <script src="angular.min.js"></script>
-    <script src="publicationCtrl.js"></script>
+    <script type="text/javascript" src="nav.js"> </script>
 </head>
-    <body ng-app="publicationApp" ng-controller="publicationCtrl">
+    <body onload="setNav()">
         <div id="utter-wrapper" class="color-skin-1">
           <header id="header" class="header">
-              <nav class="navbar navbar-default navbar-static-top" role="navigation">
-                  <div class="container">
-                      <!-- Brand and toggle get grouped for better mobile display -->
-                      <div class="navbar-header">
-                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                          <span class="sr-only">Toggle navigation</span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          </button>
-                          <a class="navbar-brand" href="index.html">Habits<span>Lab</span></a>
-                      </div>
-                      <!-- Collect the nav links, forms, and other content for toggling -->
-                      <div class="collapse navbar-collapse navbar-ex1-collapse">
-                          <ul class="nav navbar-nav">
-                              <li class="dropdown">
-                                  <a href="index.html">Home</a>
-                              </li>
-                              <li class="dropdown">
-                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Latest News</a>
-                                  <!-- <ul class="dropdown-menu">
-                                      <li><a href="elements.html">UI Elements</a></li>
-                                      <li><a href="buttons.html">Buttons</a></li>
-                                      <li><a href="icons.html">Icons</a></li>
-                                      <li><a href="pricing.html">Pricing Tables</a></li>
-                                  </ul> -->
-                              </li>
-                              <li class="dropdown">
-                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">People</a>
-                                  <!-- <ul class="dropdown-menu">
-                                      <li><a href="about.html">About Us</a></li>
-                                      <li><a href="team.html">Our Team</a></li>
-                                      <li><a href="services.html">Services</a></li>
-                                      <li><a href="faqs.html">FAQs</a></li>
-                                      <li><a href="404.html">Error 404</a></li>
-                                  </ul> -->
-                              </li>
-                              <li class="dropdown">
-                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research</a>
-                                  <!-- <ul class="dropdown-menu">
-                                      <li><a href="portfolio-2.html">Portfolio 2 Columns</a></li>
-                                      <li><a href="portfolio-3.html">Portfolio 3 Columns</a></li>
-                                      <li><a href="portfolio-4.html">Portfolio 4 Columns</a></li>
-                                      <li><a href="portfolio-item-1.html">Portfolio Item 1</a></li>
-                                      <li><a href="portfolio-item-2.html">Portfolio Item 2</a></li>
-                                  </ul> -->
-                              </li>
-                              <li class="dropdown">
-                                  <a href="publications.html">Publication</a>
-                              </li>
-                              <li class="dropdown">
-                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Habits Blog</a>
-                                  <!-- <ul class="dropdown-menu">
-                                      <li><a href="contact-1.html">Contact 1</a></li>
-                                      <li><a href="contact-2.html">Contact 2</a></li>
-                                  </ul> -->
-                              </li>
-                              <li class="dropdown active">
-                                <a href="portfolio.html">Projects</a>
-                              </li>
-                          </ul>
-                          <!-- /.nav -->
-                      </div>
-                      <!-- /.navbar-collapse -->
-                  </div>
-                  <!-- /.container -->
-              </nav>
-              <!-- /.navbar -->
           </header>
           <!-- /#header -->
             <!-- /#header -->
@@ -147,8 +78,8 @@
                                             <a href="http://www.nowakowski-studios.com/drowsy-driving/" class="portfolio-link"><i class="fa fa-link"></i></a>
                                         </div>
                                         <div class="portfolio-details">
-                                            <h5>Drowsy Driving</h5>
-                                            <p>Recognizing drowsy driving through yawn and blink detection in a car-mounted webcam, powered by Raspberry Pi</p>
+                                            <h4>Drowsy Driving</h4>
+                                            <h6>Recognizing drowsy driving through yawn and blink detection in a car-mounted webcam, powered by Raspberry Pi</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -159,11 +90,11 @@
                                             <img src="assets/img/portfolio/photo (2).jpg" class="img-responsive" alt="2nd Portfolio Thumb" width="486px" height="317px">
                                             <div class="image-overlay"></div>
                                             <a href="assets/img/portfolio/photo (2).jpg" rel="prettyPhoto[pp_gal]" class="portfolio-zoom"><i class="fa fa-eye"></i></a>
-                                            <a href="http://www.nowakowski-studios.com/drowsy-driving/" class="portfolio-link"><i class="fa fa-link"></i></a>
+                                            <a href="http://vibes-mhealth.weebly.com/" class="portfolio-link"><i class="fa fa-link"></i></a>
                                         </div>
                                         <div class="portfolio-details">
-                                            <h5>VIBES</h5>
-                                            <p>Mental health is an area of concern in the United States. It is estimated that 1 of 5 adults suffer from at least one mental illness. </p>
+                                            <h4>VIBES</h4>
+                                            <h6>Mental health is an area of concern in the United States. It is estimated that 1 of 5 adults suffer from at least one mental illness. </h6>
                                         </div>
                                     </div>
                                 </div>
@@ -177,8 +108,8 @@
                                             <a href="https://dinomujki.github.io/" class="portfolio-link"><i class="fa fa-link"></i></a>
                                         </div>
                                         <div class="portfolio-details">
-                                            <h5>WhatAJoke</h5>
-                                            <p>Leveraging the power of Microsoft Band 2 sensors and comedy we help you reduce your stress level when needed</p>
+                                            <h4>WhatAJoke</h4>
+                                            <h5>Leveraging the power of Microsoft Band 2 sensors and comedy we help you reduce your stress level</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -192,8 +123,8 @@
                                             <a href="http://coconutzzzz.github.io/index.html" class="portfolio-link"><i class="fa fa-link"></i></a>
                                         </div>
                                         <div class="portfolio-details">
-                                            <h5>RingLord</h5>
-                                            <p>An end-to-end solution consisting of a wearable sensing system, a smartphone-based gateway and an analytic engine. </p>
+                                            <h4>RingLord</h4>
+                                            <h6>An end-to-end solution consisting of a wearable sensing system, a smartphone-based gateway and an analytic engine. </h6>
                                         </div>
                                     </div>
                                 </div>
@@ -207,8 +138,8 @@
                                             <a href="http://nursing-mhealth.weebly.com/" class="portfolio-link"><i class="fa fa-link"></i></a>
                                         </div>
                                         <div class="portfolio-details">
-                                            <h5>Smart Home</h5>
-                                            <p>A system that collects data to identify activities of daily living and abnormal activities</p>
+                                            <h4>Smart Home</h4>
+                                            <h6>A system that collects data to identify activities of daily living and abnormal activities</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -222,8 +153,8 @@
                                             <a href="http://abgundry.pythonanywhere.com/" class="portfolio-link"><i class="fa fa-link"></i></a>
                                         </div>
                                         <div class="portfolio-details">
-                                            <h5>Interactions: Doctor Patient Graph</h5>
-                                            <p>A simple use case of our app is for detecting individuals at risk of possible infection spread.</p>
+                                            <h4>Interactions: Doctor Patient Graph</h4>
+                                            <h6>A simple use case of our app is for detecting individuals at risk of possible infection spread.</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -237,8 +168,8 @@
                                             <a href="http://stanleyyyan.github.io/index.html" class="portfolio-link"><i class="fa fa-link"></i></a>
                                         </div>
                                         <div class="portfolio-details">
-                                            <h5>Be Happy</h5>
-                                            <p>A way to detect loneliness through sensing</p>
+                                            <h4>Be Happy</h4>
+                                            <h6>A way to detect loneliness through sensing</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -252,8 +183,8 @@
                                             <a href="http://tehunk.github.io/EECS395-mHealth/" class="portfolio-link"><i class="fa fa-link"></i></a>
                                         </div>
                                         <div class="portfolio-details">
-                                            <h5>Sleep monitoring</h5>
-                                            <p>A Sleeping Monitor for Snoring Detection</p>
+                                            <h4>Sleep monitoring</h4>
+                                            <h6>A Sleeping Monitor for Snoring Detection</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -267,8 +198,8 @@
                                             <a href="https://www.youtube.com/watch?v=hU74xhW_oH8" class="portfolio-link"><i class="fa fa-link"></i></a>
                                         </div>
                                         <div class="portfolio-details">
-                                            <h5>Speed Eating</h5>
-                                            <p>Hand to mouth gesture detection</p>
+                                            <h4>Speed Eating</h4>
+                                            <h6>Hand to mouth gesture detection</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -282,8 +213,8 @@
                                             <a href="http://myrror.weebly.com/" class="portfolio-link"><i class="fa fa-link"></i></a>
                                         </div>
                                         <div class="portfolio-details">
-                                            <h5>Body Image Myrror</h5>
-                                            <p>Nullam id dolor id nibh ultricies vehicula.</p>
+                                            <h4>Body Image Myrror</h4>
+                                            <h6>Nullam id dolor id nibh ultricies vehicula.</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -297,8 +228,8 @@
                                             <a href="http://www.ayso.mozello.com/" class="portfolio-link"><i class="fa fa-link"></i></a>
                                         </div>
                                         <div class="portfolio-details">
-                                            <h5>Are you Stressed Out (AYSO)</h5>
-                                            <p>The website is currently not avaliable</p>
+                                            <h4>Are you Stressed Out (AYSO)</h4>
+                                            <h6>The website is currently not avaliable</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -312,8 +243,8 @@
                                             <a href="http://mhealthsleep.herokuapp.com/blog/" class="portfolio-link"><i class="fa fa-link"></i></a>
                                         </div>
                                         <div class="portfolio-details">
-                                            <h5>Sleep Controller</h5>
-                                            <p>Nullam id dolor id nibh ultricies vehicula.</p>
+                                            <h4>Sleep Controller</h4>
+                                            <h6>Nullam id dolor id nibh ultricies vehicula.</h6>
                                         </div>
                                     </div>
                                 </div>

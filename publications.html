@@ -29,78 +29,11 @@
         <!-- this is the very first line that I wrote for this project. -->
         <script src="angular.min.js"></script>
         <script src="publicationCtrl.js"></script>
+        <script type="text/javascript" src="nav.js"></script>
     </head>
-    <body ng-app="publicationApp" ng-controller="publicationCtrl">
+    <body ng-app="publicationApp" ng-controller="publicationCtrl" onload="setNav()">
         <div id="utter-wrapper" class="color-skin-1">
           <header id="header" class="header">
-              <nav class="navbar navbar-default navbar-static-top" role="navigation">
-                  <div class="container">
-                      <!-- Brand and toggle get grouped for better mobile display -->
-                      <div class="navbar-header">
-                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                          <span class="sr-only">Toggle navigation</span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          </button>
-                          <a class="navbar-brand" href="index.html">Habits<span>Lab</span></a>
-                      </div>
-                      <!-- Collect the nav links, forms, and other content for toggling -->
-                      <div class="collapse navbar-collapse navbar-ex1-collapse">
-                          <ul class="nav navbar-nav">
-                              <li class="dropdown">
-                                  <a href="index.html">Home</a>
-                              </li>
-                              <li class="dropdown">
-                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Latest News</a>
-                                  <!-- <ul class="dropdown-menu">
-                                      <li><a href="elements.html">UI Elements</a></li>
-                                      <li><a href="buttons.html">Buttons</a></li>
-                                      <li><a href="icons.html">Icons</a></li>
-                                      <li><a href="pricing.html">Pricing Tables</a></li>
-                                  </ul> -->
-                              </li>
-                              <li class="dropdown">
-                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">People</a>
-                                  <!-- <ul class="dropdown-menu">
-                                      <li><a href="about.html">About Us</a></li>
-                                      <li><a href="team.html">Our Team</a></li>
-                                      <li><a href="services.html">Services</a></li>
-                                      <li><a href="faqs.html">FAQs</a></li>
-                                      <li><a href="404.html">Error 404</a></li>
-                                  </ul> -->
-                              </li>
-                              <li class="dropdown">
-                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research</a>
-                                  <!-- <ul class="dropdown-menu">
-                                      <li><a href="portfolio-2.html">Portfolio 2 Columns</a></li>
-                                      <li><a href="portfolio-3.html">Portfolio 3 Columns</a></li>
-                                      <li><a href="portfolio-4.html">Portfolio 4 Columns</a></li>
-                                      <li><a href="portfolio-item-1.html">Portfolio Item 1</a></li>
-                                      <li><a href="portfolio-item-2.html">Portfolio Item 2</a></li>
-                                  </ul> -->
-                              </li>
-                              <li class="dropdown active">
-                                  <a href="publications.html">Publication</a>
-                              </li>
-                              <li class="dropdown">
-                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Habits Blog</a>
-                                  <!-- <ul class="dropdown-menu">
-                                      <li><a href="contact-1.html">Contact 1</a></li>
-                                      <li><a href="contact-2.html">Contact 2</a></li>
-                                  </ul> -->
-                              </li>
-                              <li class="dropdown">
-                                <a href="portfolio.html">Projects</a>
-                              </li>
-                          </ul>
-                          <!-- /.nav -->
-                      </div>
-                      <!-- /.navbar-collapse -->
-                  </div>
-                  <!-- /.container -->
-              </nav>
-              <!-- /.navbar -->
           </header>
             <!-- /#header -->
             <div id="blog-3" class="main-wrapper layout-1">
