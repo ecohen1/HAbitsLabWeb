@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="shortcut icon" href="assets/ico/favicon.png">
-        <title>ReTouch - Multi-Purpose Bootstrap Theme</title>
+        <!-- <link rel="shortcut icon" href="assets/ico/favicon.png"> -->
+        <title>The HAbits Lab | The Northwestern University Health Aware bits Lab</title>
         <!-- Bootstrap Core CSS -->
         <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
         <!-- Plugins CSS -->
@@ -14,101 +14,27 @@
         <link href="assets/prettyPhoto/css/prettyPhoto.css" rel="stylesheet">
         <!-- REVOLUTION BANNER CSS SETTINGS -->
         <link rel="stylesheet" type="text/css" href="assets/rs-plugin/css/settings.css" media="screen" />
-        <!-- Font Awesome  -->    
+        <!-- Font Awesome  -->
         <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <!-- Custom Stylesheet For This Template -->
         <link href="assets/css/stylesheet.css" rel="stylesheet">
         <link href="assets/css/skins.css" rel="stylesheet">
-        <!-- Google Fonts -->    
+        <!-- Google Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Raleway:600,700,100,900,200,500,800,400,300|Montserrat:400,700' rel='stylesheet' type='text/css'>
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
         <script src="assets/js/html5shiv.js"></script>
         <script src="assets/js/respond.min.js"></script>
         <![endif]-->
+        <!-- this is the very first line that I wrote for this project. -->
+        <script src="angular.min.js"></script>
+        <script type="text/javascript" src="nav.js"> </script>
     </head>
-    <body>
+    <body onload="setNav()">
         <div id="utter-wrapper" class="color-skin-1">
-            <header id="header" class="header">
-                <nav class="navbar navbar-default navbar-static-top" role="navigation">
-                    <div class="container">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="index.html">Re<span>Touch</span></a>
-                        </div>
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse navbar-ex1-collapse">
-                            <ul class="nav navbar-nav">
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="index.html">Home Layout 1</a></li>
-                                        <li><a href="index-2.html">Home Layout 2</a></li>
-                                        <li><a href="index-3.html">Home Layout 3</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="elements.html">UI Elements</a></li>
-                                        <li><a href="buttons.html">Buttons</a></li>
-                                        <li><a href="icons.html">Icons</a></li>
-                                        <li><a href="pricing.html">Pricing Tables</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown active">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li class="active"><a href="team.html">Our Team</a></li>
-                                        <li><a href="services.html">Services</a></li>
-                                        <li><a href="faqs.html">FAQs</a></li>
-                                        <li><a href="404.html">Error 404</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="portfolio-2.html">Portfolio 2 Columns</a></li>
-                                        <li><a href="portfolio-3.html">Portfolio 3 Columns</a></li>
-                                        <li><a href="portfolio-4.html">Portfolio 4 Columns</a></li>
-                                        <li><a href="portfolio-item-1.html">Portfolio Item 1</a></li>
-                                        <li><a href="portfolio-item-2.html">Portfolio Item 2</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="blog-1.html">Blog Layout 1</a></li>
-                                        <li><a href="blog-2.html">Blog Layout 2</a></li>
-                                        <li><a href="blog-3.html">Blog Layout 3</a></li>
-                                        <li><a href="blog-4.html">Blog Layout 4</a></li>
-                                        <li><a href="post-1.html">Post Layout 1</a></li>
-                                        <li><a href="post-2.html">Post Layout 2</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="contact-1.html">Contact 1</a></li>
-                                        <li><a href="contact-2.html">Contact 2</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <!-- /.nav -->
-                        </div>
-                        <!-- /.navbar-collapse -->
-                    </div>
-                    <!-- /.container -->
-                </nav>
-                <!-- /.navbar -->
-            </header>
+          <header id="header" class="header">
+
+          </header>
             <!-- /#header -->
             <div id="our-team" class="main-wrapper">
                 <section id="page-title-wrapper" class="page-title-wrapper">
@@ -120,8 +46,8 @@
                             <!-- /.col-sm-6 -->
                             <div class="col-xs-6 hidden-xs">
                                 <ol class="breadcrumb pull-right">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Pages</a></li>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="team.html">Team</a></li>
                                     <li class="active">Our Team</li>
                                 </ol>
                             </div>
@@ -135,67 +61,75 @@
                 <section id="team-3-columns" class="pad-top-50 ">
                     <div class="container">
                         <div class="subpage-title">
-                            <h5>Meet Our Team (3 Columns)</h5>
+                            <h5>Meet the Founder</h5>
                         </div>
                         <div class="row">
                             <div class="col-sm-6 col-md-4 team-member-wrap">
                                 <div class="team-member">
                                     <div class="member-thumb">
-                                        <img src="assets/img/smiling-group/photo (1).jpg" class="img-responsive" alt="Member Image">
+                                        <img src="assets/img/smiling-group/1.jpg" class="img-responsive" alt="Member Image">
                                     </div>
                                     <div class="member-details">
-                                        <h4 class="member-name">Full Name</h4>
-                                        <span class="position">Co-Founder</span>
-                                        <p>Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.</p>
-                                        <ul class="social-links">
-                                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-                                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
-                                            <li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
-                                        </ul>
+                                        <h4 class="member-name">Nabil Alshurafa</h4>
+                                        <span class="position">Ph.D., Founder</span>
+                                        <p>Assistant Professor, Northwestern University, Preventive Medicine, Feinberg School of Medicine, Computer Science, McCormick School of Engineering, Director, HAbits Lab</p>
                                     </div>
                                 </div>
                             </div>
                             <!-- /.col-md-4 -->
                             <div class="col-sm-6 col-md-4 team-member-wrap">
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-sm-6 col-md-4 team-member-wrap">
+                            </div>
+                            <!-- /.col-md-4 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.container -->
+                </section>
+
+                <section id="team-3-columns" class="pad-top-50 ">
+                    <div class="container">
+                        <div class="subpage-title">
+                            <h5>Meet Ph.D. & Graduate Students</h5>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4 team-member-wrap">
                                 <div class="team-member">
                                     <div class="member-thumb">
-                                        <img src="assets/img/smiling-group/photo (2).jpg" class="img-responsive" alt="Member Image">
+                                        <img src="assets/img/smiling-group/2.jpg" class="img-responsive" alt="Member Image">
                                     </div>
                                     <div class="member-details">
-                                        <h4 class="member-name">Full Name</h4>
-                                        <span class="position">Co-Founder</span>
-                                        <p>Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.</p>
-                                        <ul class="social-links">
-                                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-                                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
-                                            <li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
-                                        </ul>
+                                        <h4 class="member-name">Rawan Alharbi</h4>
+                                        <span class="position">Ph.D., Student</span>
+                                        <p>Northwestern University, Computer Science, McCormick School of Engineering, Research:  Human-computer interaction (HCI), Internet of Things, and Ubiquitous computing.</p>
                                     </div>
                                 </div>
                             </div>
                             <!-- /.col-md-4 -->
                             <div class="col-sm-6 col-md-4 team-member-wrap">
-                                <div class="team-member">
-                                    <div class="member-thumb">
-                                        <img src="assets/img/smiling-group/photo (3).jpg" class="img-responsive" alt="Member Image">
-                                    </div>
-                                    <div class="member-details">
-                                        <h4 class="member-name">Full Name</h4>
-                                        <span class="position">Co-Founder</span>
-                                        <p>Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.</p>
-                                        <ul class="social-links">
-                                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-                                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
-                                            <li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                              <div class="team-member">
+                                  <div class="member-thumb">
+                                      <img src="http://placehold.it/350x150" class="img-responsive" alt="Member Image">
+                                  </div>
+                                  <div class="member-details">
+                                      <h4 class="member-name">Shibo Zhang</h4>
+                                      <span class="position">Ph.D., Student</span>
+                                      <p>No Introduction yet</p>
+                                  </div>
+                              </div>
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-sm-6 col-md-4 team-member-wrap">
+                              <div class="member-thumb">
+                                  <img src="assets/img/smiling-group/3.jpg" class="img-responsive" alt="Member Image">
+                              </div>
+                              <div class="member-details">
+                                  <h4 class="member-name">Tianyu Zhao</h4>
+                                  <span class="position">Graduate Student</span>
+                                  <p>No Introduction yet</p>
+                              </div>
                             </div>
                             <!-- /.col-md-4 -->
                         </div>
@@ -207,7 +141,7 @@
                 <section id="team-4-columns" class="pad-0">
                     <div class="container">
                         <div class="subpage-title">
-                            <h5>Meet Our Team (4 Columns)</h5>
+                            <h5>Meet Undergraduate Students</h5>
                         </div>
                         <div class="row">
                             <div class="col-sm-6 col-md-3 team-member-wrap">
@@ -219,13 +153,6 @@
                                         <h4 class="member-name">Full Name</h4>
                                         <span class="position">Co-Founder</span>
                                         <p>Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.</p>
-                                        <ul class="social-links">
-                                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-                                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
-                                            <li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -239,13 +166,6 @@
                                         <h4 class="member-name">Full Name</h4>
                                         <span class="position">Co-Founder</span>
                                         <p>Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.</p>
-                                        <ul class="social-links">
-                                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-                                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
-                                            <li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -259,13 +179,6 @@
                                         <h4 class="member-name">Full Name</h4>
                                         <span class="position">Co-Founder</span>
                                         <p>Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.</p>
-                                        <ul class="social-links">
-                                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-                                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
-                                            <li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -279,13 +192,6 @@
                                         <h4 class="member-name">Full Name</h4>
                                         <span class="position">Co-Founder</span>
                                         <p>Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.</p>
-                                        <ul class="social-links">
-                                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-                                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
-                                            <li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -301,13 +207,15 @@
             <footer id="footer-1" class="footer">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3">
-                            <div class="widget about-us">
-                                <div class="footer-brand"><span>Re</span>Touch</div>
-                                <p>Lorem ipsum dolor sit amet, no consequat ullamcorper nec, te commune constituto intellegebat eam. Soleat populo id nec. Est in altera vocibus, et vim iudico adolescens, mel no discere mediocritatem.</p>
-                            </div>
+                        <div class="col-md-4">
+                            <!-- <div class="widget about-us"> -->
+                                <div class="footer-brand"><span>HAbits</span>Lab</div>
+                                <p>The HAbits lab focuses on testing, designing, developing and optimizing existing and novel sensing devices to better understand and improve habits.</p>
+                            <!-- </div> -->
+                        </div>
                             <!-- /.about-us -->
-                            <div class="widget stay-connedted">
+                        <div class="col-md-4">
+                            <!-- <div class="widget stay-connedted"> -->
                                 <div class="subpage-title">
                                     <h5>Stay Connected</h5>
                                 </div>
@@ -318,10 +226,24 @@
                                     <li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
                                     <li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
                                 </ul>
+                            <!-- </div> -->
+                        </div>
+                        <div clss="col-md-4">
+                            <div class="subpage-title">
+                              <h5>Connections</h5>
+                              <!-- <img class="img-responsive" src="assets/img/logo/NU.png" width="341", height="82"></img> -->
+
+                                <!-- <div class="col-sm-6"> -->
+                                  <a href="http://www.feinberg.northwestern.edu"><img class="responsive" src="assets/img/logo/Feinberg.png" width="280" height="60"></img></a>
+                                <!-- </div> -->
+                                <!-- <div class="col-sm-6"> -->
+                                  <a href="http://www.mccormick.northwestern.edu"><img class="responsive" src="assets/img/logo/McCormick.png" width="280" height="72"></img></a>
+                                <!-- </div> -->
+
                             </div>
                         </div>
                         <!-- /.col-md-3 -->
-                        <div class="col-md-3">
+                        <!-- <div class="col-md-3">
                             <div class="widget popular-posts">
                                 <div class="subpage-title">
                                     <h5>Popular Posts</h5>
@@ -357,10 +279,10 @@
                                     </li>
                                 </ul>
                             </div>
-                            <!-- /.popular-posts -->
-                        </div>
+                            /.popular-posts
+                        </div> -->
                         <!-- /.col-md-3 -->
-                        <div class="col-md-3">
+                        <!-- <div class="col-md-3">
                             <div class="widget tagcloud">
                                 <div class="subpage-title">
                                     <h5>Popular Tags</h5>
@@ -383,18 +305,18 @@
                                     <li><a href="#">webmatrix</a></li>
                                 </ul>
                             </div>
-                            <!-- /.tagcloud -->
-                        </div>
+                            /.tagcloud
+                        </div> -->
                         <!-- /.col-md-3 -->
-                        <div class="col-md-3">
+                        <!-- <div class="col-md-3">
                             <div class="widget flickr-photos">
                                 <div class="subpage-title">
                                     <h5>Flickr Photos</h5>
                                 </div>
                                 <ul class="flickr-photos-list"></ul>
                             </div>
-                            <!-- /.flickr-photos -->
-                        </div>
+                            /.flickr-photos
+                        </div> -->
                         <!-- /.col-md-3 -->
                     </div>
                     <!-- /.row -->
@@ -406,15 +328,11 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 col-sm-6 footer-info-wrapper">
-                            <span>ReTouch © 2015. All Rights Reserved. <a href="http://getbootstrap.com/">Proudly Powered By Bootstrap v3.3.2!</a></span>                        
+                            <span>The HAbits Lab © COPYRIGHT 2016 NORTHWESTERN UNIVERSITY</span>
                         </div>
                         <!-- /.footer-info-wrapper -->
                         <div class="col-xs-12 col-sm-6 footer-links-wrapper">
-                            <ul class="list-inline">
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Terms Of Service</a></li>
-                                <li><a href="#">Disclaimer</a></li>
-                            </ul>
+                            <span>(312) 503-4517 | 680 N. Lakeshore Dr., Suite 1400, Chicago, IL 60611</span>
                         </div>
                         <!-- /.footer-links-wrapper -->
                     </div>
