@@ -21,41 +21,24 @@ function setNav(){
                   <li class="dropdown" id="index.html">
                       <a href="index.html">Home</a>
                   </li>
-                  <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Latest News</a>
-                      <!-- <ul class="dropdown-menu">
-                          <li><a href="elements.html">UI Elements</a></li>
-                          <li><a href="buttons.html">Buttons</a></li>
-                          <li><a href="icons.html">Icons</a></li>
-                          <li><a href="pricing.html">Pricing Tables</a></li>
-                      </ul> -->
-                  </li>
                   <li class="dropdown" id="team.html">
                       <a href="team.html">People</a>
                   </li>
 
                   <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research</a>
-                      <!-- <ul class="dropdown-menu">
-                          <li><a href="portfolio-2.html">Portfolio 2 Columns</a></li>
-                          <li><a href="portfolio-3.html">Portfolio 3 Columns</a></li>
-                          <li><a href="portfolio-4.html">Portfolio 4 Columns</a></li>
-                          <li><a href="portfolio-item-1.html">Portfolio Item 1</a></li>
-                          <li><a href="portfolio-item-2.html">Portfolio Item 2</a></li>
-                      </ul> -->
+                      <a href="#">Research</a>
                   </li>
                   <li class="dropdown" id="publications.html">
                       <a href="publications.html">Publication</a>
                   </li>
-                  <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Habits Blog</a>
-                      <!-- <ul class="dropdown-menu">
-                          <li><a href="contact-1.html">Contact 1</a></li>
-                          <li><a href="contact-2.html">Contact 2</a></li>
-                      </ul> -->
+                  <li class="dropdown" id="blog.html">
+                      <a href="blog.html">Habits Blog</a>
                   </li>
                   <li class="dropdown" id="portfolio.html">
                     <a href="portfolio.html">Projects</a>
+                  </li>
+                  <li class="dropdown" id="contact.html">
+                    <a href="contact.html">contact</a>
                   </li>
               </ul>
               <!-- /.nav -->
