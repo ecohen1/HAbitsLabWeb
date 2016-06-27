@@ -29,9 +29,11 @@
         <!-- this is the very first line that I wrote for this project. -->
         <script src="assets/js/angular.min.js"></script>
         <script src="js/publicationCtrl.js"></script>
+        <script type="text/javascript" src="js/nav.js"></script>
+        <script type="text/javascript" src="js/footer.js"></script>
     </head>
-    <body ng-app="publicationApp" ng-controller="publicationCtrl">
-        <div id="utter-wrapper" class="color-skin-1">
+    <body ng-app="publicationApp" ng-controller="publicationCtrl" onload="setFooter()">
+        <div id="utter-wrapper" class="color-skin-3">
           <header id="header" class="header">
               <nav class="navbar navbar-default navbar-static-top" role="navigation">
                   <div class="container">
@@ -52,39 +54,22 @@
                                   <a href="index.html">Home</a>
                               </li>
                               <li class="dropdown">
-                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Latest News</a>
-                                  <!-- <ul class="dropdown-menu">
-                                      <li><a href="elements.html">UI Elements</a></li>
-                                      <li><a href="buttons.html">Buttons</a></li>
-                                      <li><a href="icons.html">Icons</a></li>
-                                      <li><a href="pricing.html">Pricing Tables</a></li>
-                                  </ul> -->
-                              </li>
-                              <li class="dropdown">
                                   <a href="team.html">People</a>
                               </li>
                               <li class="dropdown">
                                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research</a>
-                                  <!-- <ul class="dropdown-menu">
-                                      <li><a href="portfolio-2.html">Portfolio 2 Columns</a></li>
-                                      <li><a href="portfolio-3.html">Portfolio 3 Columns</a></li>
-                                      <li><a href="portfolio-4.html">Portfolio 4 Columns</a></li>
-                                      <li><a href="portfolio-item-1.html">Portfolio Item 1</a></li>
-                                      <li><a href="portfolio-item-2.html">Portfolio Item 2</a></li>
-                                  </ul> -->
                               </li>
                               <li class="dropdown active">
                                   <a href="publications.html">Publication</a>
                               </li>
                               <li class="dropdown">
                                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Habits Blog</a>
-                                  <!-- <ul class="dropdown-menu">
-                                      <li><a href="contact-1.html">Contact 1</a></li>
-                                      <li><a href="contact-2.html">Contact 2</a></li>
-                                  </ul> -->
                               </li>
                               <li class="dropdown">
                                 <a href="portfolio.html">Projects</a>
+                              </li>
+                              <li class="dropdown">
+                                <a href="contact.html">Contact</a>
                               </li>
                           </ul>
                           <!-- /.nav -->
@@ -121,26 +106,24 @@
                 <section id="main-and-sidebar" class="pad-25">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-8 main">
-                                <div class="row">
-                                    <div class="col-sm-12" ng-repeat="publication in publications4">
-                                        <div class="post-wrapper">
-                                            <article class="post">
-                                                <div class="post-details">
-                                                    <h4 class="post-title">{{publication.title}}</h4>
-                                                    <!-- /.post-meta -->
-                                                    <p>Published at: {{publication.conference}}</p>
-                                                    <p>Publication Date: {{publication.date}}</p>
-                                                    <p>{{publication.description}}</p>
-                                                    <a class="btn btn-flat flat-color btn-rounded btn-sm" ng-href="{{publication.src}}">Read More</a>
-                                                </div>
-                                                <!-- /.post-details -->
-                                            </article>
-                                            <!-- /.post-->
-                                        </div>
+                                <div class="col-sm-12" ng-repeat="publication in publications4">
+                                    <div class="post-wrapper">
+                                      <article class="post">
+                                          <div class="list-group">
+                                            <div class="list-group-item">
+                                              <h4 class="post-title">{{publication.title}}</h4>
+                                              <!-- /.post-meta -->
+                                              <h6>Published at: {{publication.conference}}</h6>
+                                              <h6>Publication Date: {{publication.date}}</h6>
+                                              <h6>{{publication.description}}</h6>
+                                              <a class="btn btn-flat flat-color btn-rounded btn-sm" ng-href="{{publication.src}}">Read More</a>
+                                            </div>
+                                          </div>
+                                      </article>
+                                        <!-- /.post-->
                                     </div>
-
                                 </div>
+
                                 <ul class="pagination">
                                     <li><a href="publications.html">First</a></li>
                                     <li><a href="publications-3.html">Previous</a></li>
@@ -153,91 +136,7 @@
                                     <li><a href="publications-5.html">Last</a></li>
                                 </ul>``
                                 <!-- /.pagination -->
-                            </div>
                             <!-- /.main -->
-                            <div class="col-md-4 sidebar">
-                                <div class="widget search">
-                                    <form class="search-form">
-                                        <input type="text" class="form-control" placeholder="Search ...">
-                                    </form>
-                                </div>
-                                <!-- /.search -->
-                                <div class="widget categories">
-                                    <div class="subpage-title">
-                                        <h5>Blog Categories</h5>
-                                    </div>
-                                    <ul class="widget-list">
-                                        <li><a href="#">Category 1</a></li>
-                                        <li><a href="#">Category 2</a></li>
-                                        <li><a href="#">Category 3</a></li>
-                                        <li><a href="#">Category 4</a></li>
-                                    </ul>
-                                </div>
-                                <!-- /.categories -->
-                                <div class="widget text">
-                                    <div class="subpage-title">
-                                        <h5>Announcement</h5>
-                                    </div>
-                                    <p>Could place some introduction text here</p>
-                                </div>
-                                <!-- /.text -->
-                                <div class="widget popular-posts">
-                                    <div class="subpage-title">
-                                        <h5>Popular Posts</h5>
-                                    </div>
-                                    <ul class="recent-posts">
-                                        <li>
-                                            <h5>
-                                                <a href="#">Some Popular Posts Here</a>
-                                                <small>Posted May 20, 2016</small>
-                                            </h5>
-                                        </li>
-                                        <li>
-                                            <h5>
-                                                <a href="#">Some Popular Posts Here</a>
-                                                <small>Posted May 20, 2016</small>
-                                            </h5>
-                                        </li>
-                                        <li>
-                                            <h5>
-                                                <a href="#">Some Popular Posts Here</a>
-                                                <small>Posted May 20, 2016</small>
-                                            </h5>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- /.popular-posts -->
-                                <!-- <div class="widget tagcloud">
-                                    <div class="subpage-title">
-                                        <h5>Some Tags</h5>
-                                    </div>
-                                    <ul class="tagcloud-list">
-                                        <li><a href="#">photoshop</a>  </li>
-                                        <li><a href="#">html</a> </li>
-                                        <li><a href="#">css</a>  </li>
-                                        <li><a href="#">html5</a>  </li>
-                                        <li><a href="#">css3</a> </li>
-                                        <li><a href="#">illustration</a>  </li>
-                                        <li><a href="#">javascript</a>  </li>
-                                        <li><a href="#">jquery</a>  </li>
-                                        <li><a href="#">bootstrap 2</a> </li>
-                                        <li><a href="#">bootstrap 3</a>  </li>
-                                        <li><a href="#">php</a>  </li>
-                                        <li><a href="#">mysql</a> </li>
-                                        <li><a href="#">wordpress</a>  </li>
-                                        <li><a href="#">ajax</a>  </li>
-                                        <li><a href="#">webmatrix</a>  </li>
-                                    </ul>
-                                </div> -->
-                                <!-- /.tagcloud -->
-                                <!-- <div class="widget flickr-photos">
-                                    <div class="subpage-title">
-                                        <h5>Flickr Photos</h5>
-                                    </div>
-                                    <ul class="flickr-photos-list"></ul>
-                                </div> -->
-                                <!-- /.flickr-photos -->
-                            </div>
                             <!-- /.sidebar -->
                         </div>
                         <!-- /.row -->
@@ -247,186 +146,7 @@
                 <!-- /#main-and-sidebarr -->
             </div>
             <!-- /.main-wrapper -->
-            <footer id="footer-1" class="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <!-- <div class="widget about-us"> -->
-                                <div class="footer-brand"><span>HAbits</span>Lab</div>
-                                <p>The HAbits lab focuses on testing, designing, developing and optimizing existing and novel sensing devices to better understand and improve habits.</p>
-                            <!-- </div> -->
-                        </div>
-                            <!-- /.about-us -->
-                        <div class="col-md-4">
-                            <!-- <div class="widget stay-connedted"> -->
-                                <div class="subpage-title">
-                                    <h5>Stay Connected</h5>
-                                </div>
-                                <ul class="social-links">
-                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
-                                    <li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
-                                </ul>
-                            <!-- </div> -->
-                        </div>
-                        <div clss="col-md-4">
-                            <div class="subpage-title">
-                              <h5>Connections</h5>
-                              <!-- <img class="img-responsive" src="assets/img/logo/NU.png" width="341", height="82"></img> -->
-
-                                <!-- <div class="col-sm-6"> -->
-                                  <a href="http://www.feinberg.northwestern.edu"><img class="responsive" src="assets/img/logo/Feinberg.png" width="280" height="60"></img></a>
-                                <!-- </div> -->
-                                <!-- <div class="col-sm-6"> -->
-                                  <a href="http://www.mccormick.northwestern.edu"><img class="responsive" src="assets/img/logo/McCormick.png" width="280" height="72"></img></a>
-                                <!-- </div> -->
-
-                            </div>
-                        </div>
-                        <!-- /.col-md-3 -->
-                        <!-- <div class="col-md-3">
-                            <div class="widget popular-posts">
-                                <div class="subpage-title">
-                                    <h5>Popular Posts</h5>
-                                </div>
-                                <ul class="recent-posts">
-                                    <li>
-                                        <img src="assets/img/blog/recent-posts/photo (1).jpg" alt="Post Image">
-                                        <h5>
-                                            <a href="post-1.html">The Ultimate Guide to Adjustment Layers – Vibrance</a>
-                                            <small><i class="fa fa-clock-o"></i> Posted July 20, 2013</small>
-                                        </h5>
-                                    </li>
-                                    <li>
-                                        <img src="assets/img/blog/recent-posts/photo (2).jpg" alt="Post Image">
-                                        <h5>
-                                            <a href="post-1.html">Complete Guide to What’s New in Adobe Photoshop 14.1</a>
-                                            <small><i class="fa fa-clock-o"></i> Posted July 15, 2013</small>
-                                        </h5>
-                                    </li>
-                                    <li>
-                                        <img src="assets/img/blog/recent-posts/photo (3).jpg" alt="Post Image">
-                                        <h5>
-                                            <a href="post-1.html">How to Integrate Lightroom Into Your Photoshop Workflow</a>
-                                            <small><i class="fa fa-clock-o"></i> Posted July 10, 2013</small>
-                                        </h5>
-                                    </li>
-                                    <li>
-                                        <img src="assets/img/blog/recent-posts/photo (4).jpg" alt="Post Image">
-                                        <h5>
-                                            <a href="post-1.html">The Ultimate Guide to Adjustment Layers – Vibrance</a>
-                                            <small><i class="fa fa-clock-o"></i> Posted July 10, 2013</small>
-                                        </h5>
-                                    </li>
-                                </ul>
-                            </div>
-                            /.popular-posts
-                        </div> -->
-                        <!-- /.col-md-3 -->
-                        <!-- <div class="col-md-3">
-                            <div class="widget tagcloud">
-                                <div class="subpage-title">
-                                    <h5>Popular Tags</h5>
-                                </div>
-                                <ul class="tagcloud-list">
-                                    <li><a href="#">photoshop</a></li>
-                                    <li><a href="#">html</a></li>
-                                    <li><a href="#">css</a></li>
-                                    <li><a href="#">html5</a></li>
-                                    <li><a href="#">css3</a> </li>
-                                    <li><a href="#">illustration</a></li>
-                                    <li><a href="#">javascript</a></li>
-                                    <li><a href="#">jquery</a></li>
-                                    <li><a href="#">bootstrap 2</a></li>
-                                    <li><a href="#">bootstrap 3</a></li>
-                                    <li><a href="#">php</a></li>
-                                    <li><a href="#">mysql</a></li>
-                                    <li><a href="#">wordpress</a></li>
-                                    <li><a href="#">ajax</a></li>
-                                    <li><a href="#">webmatrix</a></li>
-                                </ul>
-                            </div>
-                            /.tagcloud
-                        </div> -->
-                        <!-- /.col-md-3 -->
-                        <!-- <div class="col-md-3">
-                            <div class="widget flickr-photos">
-                                <div class="subpage-title">
-                                    <h5>Flickr Photos</h5>
-                                </div>
-                                <ul class="flickr-photos-list"></ul>
-                            </div>
-                            /.flickr-photos
-                        </div> -->
-                        <!-- /.col-md-3 -->
-                    </div>
-                    <!-- /.row -->
-                </div>
-                <!-- /.container -->
-            </footer>
-            <!-- /#footer-1 -->
-            <footer id="footer-2" class="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 footer-info-wrapper">
-                            <span>The HAbits Lab © COPYRIGHT 2016 NORTHWESTERN UNIVERSITY</span>
-                        </div>
-                        <!-- /.footer-info-wrapper -->
-                        <div class="col-xs-12 col-sm-6 footer-links-wrapper">
-                            <span>(312) 503-4517 | 680 N. Lakeshore Dr., Suite 1400, Chicago, IL 60611</span>
-                        </div>
-                        <!-- /.footer-links-wrapper -->
-                    </div>
-                    <!-- /.row -->
-                </div>
-                <!-- /.container -->
-            </footer>
-            <!-- /#footer-2 -->
-            <div id="skin-chooser-wrap" class="skin-chooser-wrap hidden-xs">
-                <span class="change-style">Change Styles</span>
-                <span class="skin-chooser-toggle"><i class="fa fa-cog"></i></span>
-                <ul class="list-inline">
-                    <li>
-                        <div id="color-skin-1" class="color-skin active"></div>
-                    </li>
-                    <li>
-                        <div id="color-skin-2" class="color-skin"></div>
-                    </li>
-                    <li>
-                        <div id="color-skin-3" class="color-skin"></div>
-                    </li>
-                    <li>
-                        <div id="color-skin-4" class="color-skin"></div>
-                    </li>
-                    <li>
-                        <div id="color-skin-5" class="color-skin"></div>
-                    </li>
-                    <li>
-                        <div id="color-skin-6" class="color-skin"></div>
-                    </li>
-                    <li>
-                        <div id="color-skin-7" class="color-skin"></div>
-                    </li>
-                    <li>
-                        <div id="color-skin-8" class="color-skin"></div>
-                    </li>
-                    <li>
-                        <div id="color-skin-9" class="color-skin"></div>
-                    </li>
-                    <li>
-                        <div id="color-skin-10" class="color-skin"></div>
-                    </li>
-                    <li>
-                        <div id="color-skin-11" class="color-skin"></div>
-                    </li>
-                    <li>
-                        <div id="color-skin-12" class="color-skin"></div>
-                    </li>
-                </ul>
-            </div>
-            <!-- /#skin-chooser-wrap -->
+            <div id="appendFooter"></div>
         </div>
         <!-- /#utter-wrapper -->
         <!-- Bootstrap JS & Others JavaScript Plugins

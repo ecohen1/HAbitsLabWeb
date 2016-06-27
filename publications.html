@@ -33,7 +33,7 @@
         <script type="text/javascript" src="js/footer.js"></script>
     </head>
     <body ng-app="publicationApp" ng-controller="publicationCtrl" onload="setNav();setFooter()">
-        <div id="utter-wrapper" class="color-skin-1">
+        <div id="utter-wrapper" class="color-skin-3">
           <header id="header" class="header">
           </header>
             <!-- /#header -->
@@ -62,29 +62,27 @@
                 <section id="main-and-sidebar" class="pad-25">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-8 main">
                                 <div class="row">
                                     <div class="col-sm-12" ng-repeat="publication in publications">
-                                        <div class="post-wrapper">
+                                        <!-- <div class="post-wrapper"> -->
                                             <article class="post">
-                                                <div class="post-details">
+                                                <div class="list-group">
+                                                  <div class="list-group-item">
                                                     <h4 class="post-title">{{publication.title}}</h4>
                                                     <!-- /.post-meta -->
-                                                    <p>Published at: {{publication.conference}}</p>
-                                                    <p>Publication Date: {{publication.date}}</p>
-                                                    <p>{{publication.description}}</p>
+                                                    <h6>Published at: {{publication.conference}}</h6>
+                                                    <h6>Publication Date: {{publication.date}}</h6>
+                                                    <h6>{{publication.description}}</h6>
                                                     <a class="btn btn-flat flat-color btn-rounded btn-sm" ng-href="{{publication.src}}">Read More</a>
+                                                  </div>
                                                 </div>
-                                                <!-- /.post-details -->
                                             </article>
-                                            <!-- /.post-->
-                                        </div>
                                     </div>
 
                                 </div>
                                 <ul class="pagination">
-                                    <li class="disabled"><a href="#">First</a></li>
-                                    <li class="disabled"><a href="#">Previous</a></li>
+                                    <li><a href="#">First</a></li>
+                                    <li><a href="#">Previous</a></li>
                                     <li class="active"><a href="publications.html">1</a></li>
                                     <li><a href="publications-2.html">2</a></li>
                                     <li><a href="publications-3.html">3</a></li>
@@ -94,91 +92,6 @@
                                     <li><a href="publications-5.html">Last</a></li>
                                 </ul>
                                 <!-- /.pagination -->
-                            </div>
-                            <!-- /.main -->
-                            <div class="col-md-4 sidebar">
-                                <div class="widget search">
-                                    <form class="search-form">
-                                        <input type="text" class="form-control" placeholder="Search ...">
-                                    </form>
-                                </div>
-                                <!-- /.search -->
-                                <div class="widget categories">
-                                    <div class="subpage-title">
-                                        <h5>Blog Categories</h5>
-                                    </div>
-                                    <ul class="widget-list">
-                                        <li><a href="#">Category 1</a></li>
-                                        <li><a href="#">Category 2</a></li>
-                                        <li><a href="#">Category 3</a></li>
-                                        <li><a href="#">Category 4</a></li>
-                                    </ul>
-                                </div>
-                                <!-- /.categories -->
-                                <div class="widget text">
-                                    <div class="subpage-title">
-                                        <h5>Announcement</h5>
-                                    </div>
-                                    <p>Could place some introduction text here</p>
-                                </div>
-                                <!-- /.text -->
-                                <div class="widget popular-posts">
-                                    <div class="subpage-title">
-                                        <h5>Popular Posts</h5>
-                                    </div>
-                                    <ul class="recent-posts">
-                                        <li>
-                                            <h5>
-                                                <a href="#">Some Popular Posts Here</a>
-                                                <small>Posted May 20, 2016</small>
-                                            </h5>
-                                        </li>
-                                        <li>
-                                            <h5>
-                                                <a href="#">Some Popular Posts Here</a>
-                                                <small>Posted May 20, 2016</small>
-                                            </h5>
-                                        </li>
-                                        <li>
-                                            <h5>
-                                                <a href="#">Some Popular Posts Here</a>
-                                                <small>Posted May 20, 2016</small>
-                                            </h5>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- /.popular-posts -->
-                                <!-- <div class="widget tagcloud">
-                                    <div class="subpage-title">
-                                        <h5>Some Tags</h5>
-                                    </div>
-                                    <ul class="tagcloud-list">
-                                        <li><a href="#">photoshop</a>  </li>
-                                        <li><a href="#">html</a> </li>
-                                        <li><a href="#">css</a>  </li>
-                                        <li><a href="#">html5</a>  </li>
-                                        <li><a href="#">css3</a> </li>
-                                        <li><a href="#">illustration</a>  </li>
-                                        <li><a href="#">javascript</a>  </li>
-                                        <li><a href="#">jquery</a>  </li>
-                                        <li><a href="#">bootstrap 2</a> </li>
-                                        <li><a href="#">bootstrap 3</a>  </li>
-                                        <li><a href="#">php</a>  </li>
-                                        <li><a href="#">mysql</a> </li>
-                                        <li><a href="#">wordpress</a>  </li>
-                                        <li><a href="#">ajax</a>  </li>
-                                        <li><a href="#">webmatrix</a>  </li>
-                                    </ul>
-                                </div> -->
-                                <!-- /.tagcloud -->
-                                <!-- <div class="widget flickr-photos">
-                                    <div class="subpage-title">
-                                        <h5>Flickr Photos</h5>
-                                    </div>
-                                    <ul class="flickr-photos-list"></ul>
-                                </div> -->
-                                <!-- /.flickr-photos -->
-                            </div>
                             <!-- /.sidebar -->
                         </div>
                         <!-- /.row -->
@@ -190,7 +103,7 @@
             <!-- /.main-wrapper -->
 
             <div id="appendFooter"></div>
-            
+
         </div>
         <!-- /#utter-wrapper -->
         <!-- Bootstrap JS & Others JavaScript Plugins

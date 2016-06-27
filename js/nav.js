@@ -18,26 +18,26 @@ function setNav(){
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse navbar-ex1-collapse">
               <ul class="nav navbar-nav">
-                  <li class="dropdown" id="index.html">
+                  <li id="index.html">
                       <a href="index.html">Home</a>
                   </li>
-                  <li class="dropdown" id="team.html">
+                  <li id="team.html">
                       <a href="team.html">People</a>
                   </li>
 
-                  <li class="dropdown">
-                      <a href="#">Research</a>
+                  <li id="research.html">
+                      <a href="research.html">Research</a>
                   </li>
-                  <li class="dropdown" id="publications.html">
+                  <li id="publications.html">
                       <a href="publications.html">Publication</a>
                   </li>
-                  <li class="dropdown" id="blog.html">
+                  <li id="blog.html">
                       <a href="blog.html">Habits Blog</a>
                   </li>
-                  <li class="dropdown" id="portfolio.html">
+                  <li id="portfolio.html">
                     <a href="portfolio.html">Projects</a>
                   </li>
-                  <li class="dropdown" id="contact.html">
+                  <li id="contact.html">
                     <a href="contact.html">contact</a>
                   </li>
               </ul>
