@@ -16,6 +16,7 @@ function setFooter() {
                         <div class="subpage-title">
                             <h5>Stay Connected</h5>
                         </div>
+                        <p>Follow Us on Social Medial</p>
                         <ul class="social-links">
                             <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
@@ -28,13 +29,14 @@ function setFooter() {
                 <div clss="col-md-4">
                     <div class="subpage-title">
                       <h5>Connections</h5>
+                      <p>The Habits Lab is Affiliated To Northwestern Feinberg School of Medcine and Northwestern McCormick School of Engineering.</p>
                       <!-- <img class="img-responsive" src="assets/img/logo/NU.png" width="341", height="82"></img> -->
 
                         <!-- <div class="col-sm-6"> -->
-                          <a href="http://www.feinberg.northwestern.edu"><img class="responsive" src="assets/img/logo/Feinberg.png" width="280" height="60"></img></a>
+                          <a href="http://www.feinberg.northwestern.edu"><img class="responsive" src="assets/img/logo/Feinberg.png" width="200" height="43"></img></a>&nbsp&nbsp&nbsp
                         <!-- </div> -->
                         <!-- <div class="col-sm-6"> -->
-                          <a href="http://www.mccormick.northwestern.edu"><img class="responsive" src="assets/img/logo/McCormick.png" width="280" height="72"></img></a>
+                          <a href="http://www.mccormick.northwestern.edu"><img class="responsive" src="assets/img/logo/McCormick.png" width="200" height="51"></img></a>
                         <!-- </div> -->
 
                     </div>
@@ -124,12 +126,12 @@ function setFooter() {
     <footer id="footer-2" class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 footer-info-wrapper">
+                <div class="col-xs-12 col-md-6 footer-info-wrapper">
                     <span>The HAbits Lab © COPYRIGHT 2016 NORTHWESTERN UNIVERSITY</span>
                 </div>
                 <!-- /.footer-info-wrapper -->
-                <div class="col-xs-12 col-sm-6 footer-links-wrapper">
-                    <span>(312) 503-4517 | 680 N. Lakeshore Dr., Suite 1400, Chicago, IL 60611</span>
+                <div class="col-xs-12 col-md-6 footer-links-wrapper">
+                    <span style="float:right">(312) 503-4517 | 680 N. Lakeshore Dr., Suite 1400, Chicago, IL 60611</span>
                 </div>
                 <!-- /.footer-links-wrapper -->
             </div>

@@ -50,65 +50,6 @@
                     <!-- /.container -->
                 </section>
                 <!-- /.page-title-wrapper -->
-                <section id="google-map" class="section google-map pad-top-50">
-                    <div class="container">
-                        <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.915865132806!2d-87.61887148459837!3d41.8946664723562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2b552ebbed21%3A0xc8689d4465df8a91!2s680+N+Lake+Shore+Dr%2C+Chicago%2C+IL+60611!5e0!3m2!1sen!2sus!4v1465051222950"></iframe>
-                    </div>
-                </section>
-                <!-- /#google-map -->
-                <section id="contact-us" class="pad-25">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="visit-us pad-top-25">
-                                    <div class="subpage-title">
-                                        <h5><i class="fa fa-compass"></i> Visit Us</h5>
-                                    </div>
-                                    <address>
-                                        <strong>HAbits Lab</strong><br>
-                                        680 N. Lakeshore Dr., Suite 1400<br>
-                                        Chicago, IL 60611<br>
-                                    </address>
-                                </div>
-                                <div class="contact-numbers pad-top-25">
-                                    <div class="subpage-title">
-                                        <h5><i class="fa fa-phone"></i> Contact</h5>
-                                    </div>
-                                    <address>
-                                        Phone: (312) 503-4517<br>
-                                        <a href="mailto:#">nabil@northwestern.edu</a>
-                                    </address>
-                                </div>
-                            </div>
-                            <div class="col-md-8">
-                                <form class="contact-form pad-25">
-                                    <div class="subpage-title">
-                                        <h5>Get In Touch</h5>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <input class="form-control" placeholder="Name (required)" type="text">
-                                        </div>
-                                        <div class="col-md-4">
-                                            <input class="form-control" placeholder="Email (required)" type="text">
-                                        </div>
-                                        <div class="col-md-4">
-                                            <input class="form-control" placeholder="Subject (Optional)" type="text">
-                                        </div>
-                                    </div>
-                                    <!-- row-fluid -->
-                                    <textarea class="form-control" placeholder="Your Message (required)" rows="3"></textarea>
-                                    <button class="btn btn-flat flat-color btn-rounded">Submit Message</button>
-                                </form>
-                                <!-- /.contact-form -->
-                            </div>
-                        </div>
-                        <!-- /.row -->
-                    </div>
-                    <!-- /.container -->
-                </section>
-                <!-- /#contact-us -->
-
                 <section id="join-lab" class="pad-25">
                     <div class="container">
                         <div class="row">
@@ -121,9 +62,6 @@
                         </div>
                         <div class="row">
                           <div class="col-md-8 pad-20">
-                              <!-- <div class="subpage-title">
-                                  <h5>What Students We are Looking For</h5>
-                              </div> -->
                               <ul class="nav nav-tabs" id="myTab">
                                   <li class="active"><a href="#home" data-toggle="tab">Passionate</a></li>
                                   <li><a href="#profile" data-toggle="tab">Skilled</a></li>
@@ -167,7 +105,65 @@
                     <!-- /.container -->
                 </section>
                 <!-- /#join-lab -->
-
+                <section id="google-map" class="section google-map pad-top-50">
+                    <div class="container">
+                        <div class="overlay" onClick="style.pointerEvents='none'"></div>
+                        <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.915865132806!2d-87.61887148459837!3d41.8946664723562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2b552ebbed21%3A0xc8689d4465df8a91!2s680+N+Lake+Shore+Dr%2C+Chicago%2C+IL+60611!5e0!3m2!1sen!2sus!4v1465051222950"></iframe>
+                    </div>
+                </section>
+                <!-- /#google-map -->
+                <section id="contact-us" class="pad-25">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="visit-us pad-top-25">
+                                    <div class="subpage-title">
+                                        <h5><i class="fa fa-compass"></i> Visit Us</h5>
+                                    </div>
+                                    <address>
+                                        <strong>HAbits Lab</strong><br>
+                                        680 N. Lakeshore Dr., Suite 1400<br>
+                                        Chicago, IL 60611<br>
+                                    </address>
+                                </div>
+                                <div class="contact-numbers pad-top-25">
+                                    <div class="subpage-title">
+                                        <h5><i class="fa fa-phone"></i> Contact</h5>
+                                    </div>
+                                    <address>
+                                        Phone: (312) 503-4517<br>
+                                        <a href="mailto:#">nabil@northwestern.edu</a>
+                                    </address>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <form class="contact-form pad-25" action="MAILTO:nabil@northwestern.edu" method="post" enctype="text/plain" id="form">
+                                    <div class="subpage-title">
+                                        <h5>Get In Touch</h5>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <input class="form-control" placeholder="Name (required)" type="text" name="My name is">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input class="form-control" placeholder="Email (required)" type="text" name="My email is">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input class="form-control" placeholder="Subject (Optional)" type="text" name="The subject is">
+                                        </div>
+                                    </div>
+                                    <!-- row-fluid -->
+                                    <textarea class="form-control" placeholder="Your Message (required)" rows="3" name="My message is"></textarea>
+                                    <button class="btn btn-flat flat-color btn-rounded" id="submit">Submit Message</button>
+                                </form>
+                                <!-- /.contact-form -->
+                            </div>
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.container -->
+                </section>
+                <!-- /#contact-us -->
             </div>
             <!-- /.main-wrapper -->
             <div id="appendFooter"></div>
@@ -192,5 +188,36 @@
         <script src="assets/FitVids.js/jquery.fitvids.js"></script>
         <!-- Custom Script For This Template -->
         <script src="assets/js/script.js"></script>
+        <style>
+        .overlay {
+             background:transparent;
+             position:relative;
+             width:100%;
+             height:350px; /* your iframe height */
+             top:350px;  /* your iframe height */
+             margin-top:-350px;  /* your iframe height */
+          }
+        </style>
+        <!-- <script>
+            $("#form").keyup(function() {
+
+                var empty = false;
+                $("#form").each(function() {
+                    if ($(this).val() == "") {
+                        empty = true;
+                    }
+                });
+
+                if (empty) {
+                    $('#submit').attr('disabled', 'disabled');
+                } else {
+                    $('#submit').removeAttr('disabled');
+                }
+            }); -->
+
+        $("form").submit(function(){
+            alert("Thank Your for Submitting This Message");
+        });
+        </script>
     </body>
 </html>
