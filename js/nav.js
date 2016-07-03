@@ -32,7 +32,7 @@ function setNav(){
                       <a href="publications.html">Publication</a>
                   </li>
                   <li id="blog.html">
-                      <a href="blog.html">Habits Blog</a>
+                      <a href="blog.html">Code and Data</a>
                   </li>
                   <li id="portfolio.html">
                     <a href="portfolio.html">Projects</a>
