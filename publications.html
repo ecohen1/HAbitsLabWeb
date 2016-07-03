@@ -21,12 +21,6 @@
         <link href="assets/css/skins.css" rel="stylesheet">
         <!-- Google Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Raleway:600,700,100,900,200,500,800,400,300|Montserrat:400,700' rel='stylesheet' type='text/css'>
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-        <script src="assets/js/html5shiv.js"></script>
-        <script src="assets/js/respond.min.js"></script>
-        <![endif]-->
-        <!-- this is the very first line that I wrote for this project. -->
         <script src="assets/js/angular.min.js"></script>
         <script src="js/publicationCtrl.js"></script>
         <script type="text/javascript" src="js/nav.js"></script>
@@ -62,10 +56,13 @@
                         <ul class="portfolio-filter nav nav-pills">
                             <li class="active"><a href="#" data-filter="*">All</a></li>
                             <li><a href="#" data-filter=".sensor">Sensor</a></li>
+                            <li><a href="#" data-filter=".wearable">Wearable</a></li>
                             <li><a href="#" data-filter=".machinelearning">Machine Learning</a></li>
-                            <li><a href="#" data-filter=".eating">Eating</a></li>
-                            <li><a href="#" data-filter=".sleeping">Sleeping</a></li>
+                            <li><a href="#" data-filter=".remotehealthmonitoring">Remote Health Monitoring</a></li>
                             <li><a href="#" data-filter=".health">Health</a></li>
+                            <li><a href="#" data-filter=".eating">Eating</a></li>
+                            <li><a href="#" data-filter=".physicalactivity">Physical Activity</a></li>
+                            <li><a href="#" data-filter=".sleeping">Sleeping</a></li>
                         </ul>
                         <div id="isotope-publication">
                           <div class="list-group">
@@ -75,10 +72,8 @@
                                 <div class="publication-selector {{publication.tag}}">
                                 <div class="list-group-item" style="width:1230px">
                                 <h4><a ng-href="{{publication.src}}">{{publication.title}}</a></h4>
-                                <p style="color:black">Published at: {{publication.conference}}</p>
-                                <p style="color:black">Publication Date: {{publication.date}}</p>
+                                <p style="color:black">Published at: {{publication.conference}} &nbsp {{publication.date}}</p>
                                 <p style="color:black">{{publication.description}}</p>
-                                <p style="color:black">Tag: {{publication.tag}}</p>
                               </div>
                               </div>
                               </div>
