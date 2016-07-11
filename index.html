@@ -20,14 +20,58 @@
         <link href="assets/css/stylesheet.css" rel="stylesheet">
         <link href="assets/css/skins.css" rel="stylesheet">
         <!-- Google Fonts -->
-        <link href='http://fonts.googleapis.com/css?family=Raleway:600,700,100,900,200,500,800,400,300|Montserrat:400,700' rel='stylesheet' type='text/css'>
+        
         <script type="text/javascript" src="js/nav.js"> </script>
         <script type="text/javascript" src="js/footer.js"> </script>
     </head>
-    <body onload="setNav();setFooter()">
+    <body onload="setFooter()">
         <div id="utter-wrapper" class="color-skin-3">
             <header id="header" class="header">
+              <nav class="navbar navbar-default navbar-static-top" role="navigation">
+                  <div class="container">
+                      <!-- Brand and toggle get grouped for better mobile display -->
+                      <div class="navbar-header">
+                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          </button>
+                          <a class="navbar-brand" href="index.html">Habits<span>Lab</span></a>
+                      </div>
+                      <!-- Collect the nav links, forms, and other content for toggling -->
+                      <div class="collapse navbar-collapse navbar-ex1-collapse">
+                          <ul class="nav navbar-nav">
+                              <li id="index.html" class="active">
+                                  <a href="index.html">Home</a>
+                              </li>
+                              <li id="team.html">
+                                  <a href="team.html">People</a>
+                              </li>
 
+                              <li id="research.html">
+                                  <a href="research.html">Research</a>
+                              </li>
+                              <li id="publications.html">
+                                  <a href="publications.html">Publication</a>
+                              </li>
+                              <li id="blog.html">
+                                  <a href="#">Code and Data</a>
+                              </li>
+                              <li id="portfolio.html">
+                                <a href="portfolio.html">Projects</a>
+                              </li>
+                              <li id="contact.html">
+                                <a href="contact.html">contact</a>
+                              </li>
+                          </ul>
+                          <!-- /.nav -->
+                      </div>
+                      <!-- /.navbar-collapse -->
+                  </div>
+                  <!-- /.container -->
+              </nav>
+              <!-- /.navbar -->
             </header>
             <!-- /#header -->
             <div id="index-1" class="main-wrapper">
@@ -39,50 +83,18 @@
                             <li data-transition="random" data-slotamount="10" data-masterspeed="1000">
                                 <img src="assets/img/slides/Temp2.jpg" alt="Slide Image">
                                 <a href="http://www.preventivemedicine.northwestern.edu/" class="caption btn btn-flat flat-color sfb stb"
-                                    data-x="230"
+                                    data-x="10"
                                     data-y="370"
                                     data-speed="500"
                                     data-start="1800"
                                     data-easing="easeOutExpo">Feinberg Department Home</a>
                                 <a href="http://www.mccormick.northwestern.edu/eecs/index.html" class="caption btn btn-flat flat-color sfb stb"
-                                    data-x="630"
+                                    data-x="650"
                                     data-y="370"
                                     data-speed="500"
                                     data-start="1800"
                                     data-easing="easeOutExpo">McCormick Department Home</a>
                             </li>
-
-                            <!-- <li data-transition="random" data-slotamount="10" data-masterspeed="1000">
-                                <img src="assets/img/slides/slide1.jpg" alt="Slide Image">
-                                <div class="tp-caption very_large_black_text lft ltt"
-                                    data-x="60"
-                                    data-y="105"
-                                    data-speed="500"
-                                    data-start="1200"
-                                    data-easing="easeOutExpo" style="font-size: 55px; color: #FCF5F4; line-height: 55px; font-family: 'Raleway', sans-serif; font-weight: 800;">Where</br>Preventive Medcine</div>
-                                <a href="http://www.preventivemedicine.northwestern.edu/" class="caption btn btn-flat flat-color sfb stb"
-                                    data-x="60"
-                                    data-y="225"
-                                    data-speed="500"
-                                    data-start="1800"
-                                    data-easing="easeOutExpo">Department Home</a>
-                            </li>
-
-                            <li data-transition="random" data-slotamount="10" data-masterspeed="1000">
-                                <img src="assets/img/slides/slide5.jpg" alt="Slide Image">
-                                <div class="tp-caption very_large_black_text lft ltt"
-                                    data-x="690"
-                                    data-y="80"
-                                    data-speed="500"
-                                    data-start="1200"
-                                    data-easing="easeOutExpo" style="font-size: 55px; color: #000000; line-height: 55px; font-family: 'Raleway', sans-serif; font-weight: 800;">Meet</br>Computer Science</div>
-                                <a href="http://www.mccormick.northwestern.edu/eecs/index.html" class="caption btn btn-flat flat-color sfb stb"
-                                    data-x="690"
-                                    data-y="225"
-                                    data-speed="500"
-                                    data-start="1800"
-                                    data-easing="easeOutExpo">Department Home</a>
-                              </li> -->
                         </ul>
                         <div class="tp-bannertimer tp-bottom"></div>
                     </div>
@@ -236,9 +248,9 @@
                                 <div class="subpage-title">
                                     <h5>About The Lab</h5>
                                 </div>
-                                <p style="color:black">Lorem ipsum dolor sit amet, vis principes interpretaris cu. His eu quem impedit percipit, ut dolorum posidonium sea. Intellegebat definitionem te eam. Ex pri quod omnes contentiones, an has fuisset theophrastus, id eum labore omnesque. Cu quod habeo constituam est, regione scribentur nec ex. Mea ad rebum inimicus, usu ne labore regione deterruisset, vix stet imperdiet te.</p>
-                                <p style="color:black">Ne sit movet simul sensibus. Utamur philosophia est id, an nam nisl scripserit. Elit minimum interesset nec ex. His euismod principes no, mel delenit argumentum in. In mel hinc natum, duo menandri vulputate ea, vim et quidam commodo partiendo. Volumus postulant te sit.</p>
-                                <p style="color:black">In putant contentiones eum, duo ad ferri ceteros. An eos primis rationibus, quod moderatius no eos. Te causae accusata cum. In vix explicari accommodare.</p>
+                                <p style="color:black">It is the humanity within us and the desire to improve quality of life and healthcare costs that guide our solutions to the persisting health problems of our time through computer science and behavior science based research in passive sensing data analytics; helping us advance our ability to understand, detect, predict, and ultimately prevent problematic health habits.</p>
+                                <p style="color:black">We design, build and analyze end-to-end mHealth systems, while focusing on processing its data to help answer health-related questions. We focus on signal processing and machine learning techniques to process time-series data generated from passive sensors. To advance existing sensing techniques, a part of our lab focuses on the design of embedded systems.</p>
+                                <p style="color:black">We are the Health Aware bits (Habits) Lab.</p>
                             </div>
                         </div>
                     </div>
@@ -255,7 +267,7 @@
                                     </span>
                                     <div class="service-details">
                                         <h3>About The Lab</h3>
-                                        <p style="color:black">The HAbits Lab. The Health Aware bits Lab. Where Preventive Medicine & Computer Science Research Meet</br></br></br></p>
+                                        <p style="color:black">We are creating a two-way bridge between computer science and preventive medicine and seeing what we get.</br></br></br></p>
                                         </br>
                                         <a href="team.html" class="btn btn-flat flat-color">Meet Team</a>
                                     </div>
@@ -380,7 +392,7 @@
                                     </div>
                                     <div class="testimonial">
                                         <div class="testimonial-content">
-                                            <p>If the more difficulty you meet with, the more excited you feel, then you know, you are doing the right research.</p>
+                                            <p>If the greater the challenges your met with, the more excited you feel, the more you know you found the right research lab.</p>
                                         </div>
                                         <div class="testimonial-author">
                                             <img class="user-thumb" src="assets/img/users/8.jpg" alt="User Thumb">
