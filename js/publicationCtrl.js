@@ -27,7 +27,7 @@ app.controller("publicationCtrl", function($scope) {
       "date": "2016",
       "description": "",
       "conference": "IEEE Transactions on Biomedical Engineering",
-      "src": "",
+      "src": "http://www.ncbi.nlm.nih.gov/pubmed/27214888",
       "tag": "machinelearning wearable"},
 
       {"title": "Probabilistic Segmentation of Time-Series Audio Signals using Support Vector Machines",
@@ -41,7 +41,7 @@ app.controller("publicationCtrl", function($scope) {
       "date": "2016",
       "description": "",
       "conference": "IEEE Pervasive Computing",
-      "src": "",
+      "src": "http://er.cs.ucla.edu/publications.htm",
       "tag": "eating physicalactivity"},
 
       {"title": "Detection of Gestures Associated with Medication Adherence using Smartwatch-based Inertial Sensors",
