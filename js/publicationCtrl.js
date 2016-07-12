@@ -7,6 +7,7 @@ app.controller("publicationCtrl", function($scope) {
       "conference": "Elsevier Artificial Intelligence in Medicine.",
       "description": "Objective Studies have revealed that non-adherence to prescribed medication can lead to hospital readmissions, clinical complications, and other negative patient outcomes.",
       "src": "http://www.sciencedirect.com/science/article/pii/S0933365715300580",
+      "download":"assets/papers/1.pdf",
       "tag": "sensor wearable"},
 
       {"title": "A comparison of piezoelectric-based inertial sensing and audio-based detection of swallows",
@@ -14,6 +15,7 @@ app.controller("publicationCtrl", function($scope) {
       "description": "Obesity Medicine",
       "conference": "Background Prior research has shown a correlation between poor dietary habits and countless negative health outcomes such as heart disease, diabetes, and certain cancers.",
       "src": "http://www.sciencedirect.com/science/article/pii/S2451847615300105",
+      "download":"assets/papers/2.pdf",
       "tag": "eating"},
 
       {"title": "Remote Health Monitoring Outcome Success Prediction using First Month Intervention Data",
@@ -21,6 +23,7 @@ app.controller("publicationCtrl", function($scope) {
       "conference": "IEEE Journal of Biomedical and Health Informatics",
       "description": "Remote health monitoring (RHM) systems are becoming more widely adopted by clinicians and hospitals to remotely monitor and communicate with patients while optimizing clinician time, decreasing hospital costs, and improving quality of care.",
       "src": "http://europepmc.org/abstract/med/26780823",
+      "download":"assets/papers/3.pdf",
       "tag": "health remotehealthmonitoring"},
 
       {"title": "Dynamic Computation Offloading for Low-Power Wearable Health Monitoring Systems",
