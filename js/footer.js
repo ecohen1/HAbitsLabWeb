@@ -4,14 +4,15 @@ function setFooter() {
     <footer id="footer-1" class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <!-- <div class="widget about-us"> -->
-                        <div class="footer-brand"><img alt="Brand" src="assets/img/logo/habits.png" style="margin-top:15px"></div>
-                        <p style="color:black">The HAbits lab focuses on testing, designing, developing and optimizing existing and novel sensing devices to better understand and improve habits.</p>
-                    <!-- </div> -->
+                <div class="col-md-3">
+                  <div class="subpage-title">
+                      <h5>The Lab</h5>
+                  </div>
+                  <p>We design, build, develop, and analyze. We are habits lab.</p>
+                  <img alt="Brand" src="assets/img/logo/habits.png">
                 </div>
                     <!-- /.about-us -->
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="subpage-title">
                         <h5>Stay Connected</h5>
                     </div>
@@ -24,7 +25,7 @@ function setFooter() {
                         <li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="subpage-title">
                       <h5>Connections</h5>
                     </div>
