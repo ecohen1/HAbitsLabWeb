@@ -22,16 +22,37 @@
         <link rel="stylesheet" href="assets/css/styles.css" type="text/css" media="screen"/>
         <!-- Google Fonts -->
         <link href='https://fonts.googleapis.com/css?family=Raleway:600,700,100,900,200,500,800,400,300|Montserrat:400,700' rel='stylesheet' type='text/css'>
-        <!-- <script type="text/javascript" src="js/nav.js"> </script> -->
-        <script type="text/javascript" src="js/footer.js"> </script>
     </head>
-    <body onload="setFooter()">
+    <body>
         <div id="utter-wrapper" class="color-skin-3">
           <header>
               <div id="top-bar">
                   <div class="contain-1120">
                       <div id="left">
                           <a href="http://www.northwestern.edu"><img src="https://common.northwestern.edu/v8/css/images/northwestern.svg" alt="Northwestern University" /><span class="hide-label">Northwestern University</span></a>
+                      </div>
+                      <div id="mobile-links">
+                          <a href="#mobile-nav" class="mobile-link mobile-nav-link"><span class="hide-label">Menu</span></a>
+                          <nav id="mobile-nav">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="team.html">People</a></li>
+                                <li><a href="research.html">Research</a></li>
+                                <li><a href="publications.html">Publication</a></li>
+                                <li><a href="portfolio.html">Projects</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                              </ul>
+                              <div id="mobile-nav-bottom">
+                                  <!-- links from #top-bar #right -->
+                                  <ul id="mobile-nav-bottom-left">
+                                    <li><a href="http://www.preventivemedicine.northwestern.edu/">Preventive Medicine</a></li>
+                                    <li><a href="http://www.mccormick.northwestern.edu/eecs/computer-science/">Computer Science</a></li>
+                                    <li><a href="http://www.ncbi.nlm.nih.gov/pubmed">Pub Med</a></li>
+                                    <li><a href="http://www.nalshurafa.com/">Lab Director's Page</a></li>
+                                  </ul>
+                                  <!-- links under "resources" from #top-bar #right .dropdown -->
+                              </div>
+                          </nav>
                       </div>
                       <div id="right">
                         <ul>
@@ -400,13 +421,64 @@
                 </section>
             </div>
 
-            <div id="appendFooter"></div>
-            <!-- /#skin-chooser-wrap -->
+            <footer id="footer-1" class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <!-- <div class="widget about-us"> -->
+                                <div class="footer-brand"><img alt="Brand" src="assets/img/logo/habits.png" style="margin-top:15px"></div>
+                                <p style="color:black">The HAbits lab focuses on testing, designing, developing and optimizing existing and novel sensing devices to better understand and improve habits.</p>
+                            <!-- </div> -->
+                        </div>
+                            <!-- /.about-us -->
+                        <div class="col-md-4">
+                            <div class="subpage-title">
+                                <h5>Stay Connected</h5>
+                            </div>
+                            <p>Follow Us on Social Medial</p>
+                            <ul class="social-links">
+                                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="subpage-title">
+                              <h5>Connections</h5>
+                            </div>
+                              <p >The Habits Lab is Affiliated To Northwestern Feinberg School of Medcine and Northwestern McCormick School of Engineering.</p>
+                                  <a href="http://www.feinberg.northwestern.edu"><img class="responsive" src="assets/img/logo/Feinberg.png" width="200" height="43"></img></a>&nbsp&nbsp&nbsp
+                                  <a href="http://www.mccormick.northwestern.edu"><img class="responsive" src="assets/img/logo/McCormick.png" width="200" height="51"></img></a>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </footer>
+            <!-- /#footer-1 -->
+            <footer id="footer-2" class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-5 footer-info-wrapper">
+                            <span>The HAbits Lab © COPYRIGHT 2016 NORTHWESTERN UNIVERSITY</span>
+                        </div>
+                        <!-- /.footer-info-wrapper -->
+                        <div class="col-xs-12 col-md-5 footer-info-wrapper">
+                            <span>(312) 503-4517 | 680 N. Lakeshore Dr., Suite 1400, Chicago, IL 60611</span>
+                        </div>
+                        <div class="col-xs-12 col-md-2 footer-info-wrapper">
+                            <span>Designed By <a href="https://muyangamigo.github.io">Junjie Li</a></span>
+                        </div>
+                        <!-- /.footer-links-wrapper -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </footer>
+            <!-- /#footer-2 -->
         </div>
-        <!-- /#utter-wrapper -->
-        <!-- Bootstrap JS & Others JavaScript Plugins
-            ================================================== -->
-        <!-- Placed At The End Of The Document So Page Loads Faster -->
         <script src="assets/js/jquery-2.0.3.min.js"></script>
         <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -422,6 +494,7 @@
         <script src="assets/UItoTop/js/jquery.ui.totop.min.js"></script>
         <script src="assets/isotope-site/jquery.isotope.min.js"></script>
         <script src="assets/FitVids.js/jquery.fitvids.js"></script>
+        <script src="js/scripts.js"></script>
         <script src="js/index.js"></script>
     </body>
 </html>

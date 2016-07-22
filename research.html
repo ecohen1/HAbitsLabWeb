@@ -28,7 +28,29 @@
     <body onload="setNav();setFooter()">
         <div id="utter-wrapper" class="color-skin-3">
           <header id="header" class="header">
-
+            <div id="mobile-links">
+                <a href="#mobile-nav" class="mobile-link mobile-nav-link"><span class="hide-label">Menu</span></a>
+                <nav id="mobile-nav">
+                  <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="team.html">People</a></li>
+                      <li><a href="research.html">Research</a></li>
+                      <li><a href="publications.html">Publication</a></li>
+                      <li><a href="portfolio.html">Projects</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div id="mobile-nav-bottom">
+                        <!-- links from #top-bar #right -->
+                        <ul id="mobile-nav-bottom-left">
+                          <li><a href="http://www.preventivemedicine.northwestern.edu/">Preventive Medicine</a></li>
+                          <li><a href="http://www.mccormick.northwestern.edu/eecs/computer-science/">Computer Science</a></li>
+                          <li><a href="http://www.ncbi.nlm.nih.gov/pubmed">Pub Med</a></li>
+                          <li><a href="http://www.nalshurafa.com/">Lab Director's Page</a></li>
+                        </ul>
+                        <!-- links under "resources" from #top-bar #right .dropdown -->
+                    </div>
+                </nav>
+            </div>
           </header>
             <!-- /#header -->
             <div id="portfolio-item-1" class="main-wrapper">
@@ -471,6 +493,7 @@
         <script src="assets/UItoTop/js/jquery.ui.totop.min.js"></script>
         <script src="assets/isotope-site/jquery.isotope.min.js"></script>
         <script src="assets/FitVids.js/jquery.fitvids.js"></script>
+        <script src="js/scripts.js"></script>
         <script src="js/research.js"></script>
         <!-- Custom Script For This Template -->
         <script src="assets/js/script.js"></script>

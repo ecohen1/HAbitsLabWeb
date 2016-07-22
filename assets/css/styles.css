@@ -3,6 +3,15 @@ html{
   font: inherit;
 }
 
+#mobile-nav ul, #mobile-nav li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
 /* line 12, ../scss/base/_mixins-extends.scss */
 #top-bar:after, .bottom-bar:after, #search:after {
   content: "";
@@ -293,7 +302,10 @@ header {
     position: relative;
   }
 }
-/* line 3, ../scss/sections/_top-nav.scss */
+/* line 3, ../scss/sections/_mobile-nav.scss */
+#mobile-links, #mobile-nav {
+  display: none;
+}
 
 /* line 7, ../scss/sections/_top-nav.scss */
 #top-nav {
@@ -465,17 +477,193 @@ header {
     float: left;
   }
 }
+
 @media screen and (max-width: 768px) {
   /* line 192, ../scss/sections/_top-nav.scss */
   #top-nav {
     display: none;
   }
 }
-/* line 3, ../scss/sections/_mobile-nav.scss */
-#mobile-links, #mobile-nav {
-  display: none;
-}
 
 @media screen and (max-width: 768px) {
+  /* line 10, ../scss/sections/_mobile-nav.scss */
+  #mobile-links {
+    display: block;
+    float: right;
+    height: 55px;
+  }
 
+  /* line 15, ../scss/sections/_mobile-nav.scss */
+  .mobile-link {
+    display: inline-block;
+    padding: 1em;
+    height: 55px;
+    width: 55px;
+    cursor: pointer;
+    position: relative;
+  }
+  /* line 23, ../scss/sections/_mobile-nav.scss */
+  .mobile-link.mobile-search-link {
+    background: url("https://common.northwestern.edu/v8/css/images/icons/search.svg") no-repeat center/20px 20px;
+  }
+  /* line 26, ../scss/sections/_mobile-nav.scss */
+  .mobile-link.mobile-search-link.open {
+    background: #4e2a84 url("https://common.northwestern.edu/v8/css/images/icons/alert-x-white-home.svg") no-repeat center/20px 20px;
+  }
+  /* line 31, ../scss/sections/_mobile-nav.scss */
+  .mobile-link.mobile-nav-link {
+    background: url("https://common.northwestern.edu/v8/css/images/icons/hamburger.svg") no-repeat center/20px 20px;
+  }
+  /* line 34, ../scss/sections/_mobile-nav.scss */
+  .mobile-link.mobile-nav-link.open {
+    background: white url("https://common.northwestern.edu/v8/css/images/icons/close-button-dkpurple.svg") no-repeat center/20px 20px;
+  }
+
+  /* line 40, ../scss/sections/_mobile-nav.scss */
+  #mobile-nav {
+    display: none;
+    background: white;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    right: 0;
+    z-index: 9998;
+  }
+  /* line 49, ../scss/sections/_mobile-nav.scss */
+  #mobile-nav ul {
+    background: white;
+  }
+  /* line 52, ../scss/sections/_mobile-nav.scss */
+  #mobile-nav ul ul {
+    display: none;
+    background: #f0f0f0;
+  }
+  /* line 56, ../scss/sections/_mobile-nav.scss */
+  #mobile-nav ul ul ul {
+    background-color: #e6e6e6;
+  }
+  /* line 59, ../scss/sections/_mobile-nav.scss */
+  #mobile-nav ul ul ul ul {
+    background-color: gainsboro;
+  }
+  /* line 62, ../scss/sections/_mobile-nav.scss */
+  #mobile-nav ul ul ul ul ul {
+    background-color: #d1d1d1;
+  }
+  /* line 65, ../scss/sections/_mobile-nav.scss */
+  #mobile-nav ul ul ul ul ul ul {
+    background-color: #c7c7c7;
+  }
+  /* line 74, ../scss/sections/_mobile-nav.scss */
+  #mobile-nav li {
+    position: relative;
+    font: 18px "Akkurat Pro Bold", "Arial Black", sans-serif;
+  }
+  /* line 79, ../scss/sections/_mobile-nav.scss */
+  #mobile-nav li a {
+    text-decoration: none;
+    color: #4e2a84;
+    display: block;
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
+    padding: .9em 3em .9em .8em;
+  }
+  /* line 87, ../scss/sections/_mobile-nav.scss */
+  #mobile-nav li a.active {
+    color: black;
+    font-family: "Akkurat Pro Bold", "Arial Black", sans-serif;
+  }
+  /* line 95, ../scss/sections/_mobile-nav.scss */
+  #mobile-nav li .arrow.open a {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    border: none;
+  }
+  /* line 102, ../scss/sections/_mobile-nav.scss */
+  #mobile-nav li .arrow a {
+    width: 50px;
+    height: 48px;
+    background: url("https://common.northwestern.edu/v8/css/images/icons/mobile-down-arrow-ltpurple.svg") no-repeat center/20px 20px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    border: none;
+    padding: 0;
+  }
+  /* line 117, ../scss/sections/_mobile-nav.scss */
+  #mobile-nav li li {
+    font: 16px/1.2em "Akkurat Pro Regular", Arial, sans-serif;
+  }
+  /* line 120, ../scss/sections/_mobile-nav.scss */
+  #mobile-nav li li a {
+    padding-left: 1.5em;
+  }
+  /* line 124, ../scss/sections/_mobile-nav.scss */
+  #mobile-nav li li li a {
+    padding-left: 2em;
+  }
+  /* line 127, ../scss/sections/_mobile-nav.scss */
+  #mobile-nav li li li li a {
+    padding-left: 2.5em;
+  }
+  /* line 131, ../scss/sections/_mobile-nav.scss */
+  #mobile-nav li li li li li a {
+    padding-left: 3em;
+  }
+  /* line 135, ../scss/sections/_mobile-nav.scss */
+  #mobile-nav li li li li li li a {
+    padding-left: 3.5em;
+  }
+
+  /* line 143, ../scss/sections/_mobile-nav.scss */
+  #mobile-nav-bottom {
+    background: #401f68;
+  }
+  /* line 146, ../scss/sections/_mobile-nav.scss */
+  #mobile-nav-bottom:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* line 150, ../scss/sections/_mobile-nav.scss */
+  #mobile-nav-bottom ul {
+    margin: 0;
+    padding: 1rem;
+    background: none;
+  }
+  /* line 156, ../scss/sections/_mobile-nav.scss */
+  #mobile-nav-bottom li {
+    background: transparent;
+    padding: 0;
+    font-size: 12px;
+    line-height: 24px;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 164, ../scss/sections/_mobile-nav.scss */
+  #mobile-nav-bottom li:last-child {
+    border: none;
+  }
+  /* line 168, ../scss/sections/_mobile-nav.scss */
+  #mobile-nav-bottom li a {
+    text-transform: uppercase;
+    color: white;
+    font: 12px/2em "Akkurat Pro Bold", "Arial Black", sans-serif;
+    border: none;
+    padding: inherit;
+  }
+  /* line 175, ../scss/sections/_mobile-nav.scss */
+  #mobile-nav-bottom li a.white-link {
+    color: white;
+  }
+  /* line 181, ../scss/sections/_mobile-nav.scss */
+  #mobile-nav-bottom #mobile-nav-bottom-left, #mobile-nav-bottom #mobile-nav-bottom-right {
+    width: 50%;
+    display: inline-block;
+    float: left;
+  }
 }
