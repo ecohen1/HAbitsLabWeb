@@ -3,48 +3,58 @@ function setNav(){
   var page = path.split("/").pop();
   var header = $("#header");
   header.append( `
-  <nav class="navbar navbar-default navbar-static-top" role="navigation">
-      <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-              <a href="https://muyangamigo.github.io/HAbitsLabWeb/index.html">
-                <img alt="Brand" src="assets/img/logo/habits.png" style="margin-top:15px">
-              </a>
-          </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse navbar-ex1-collapse">
-              <ul class="nav navbar-nav">
-                  <li id="index.html">
-                      <a href="index.html">Home</a>
-                  </li>
-                  <li id="team.html">
-                      <a href="team.html">People</a>
-                  </li>
+    <div id="top-bar">
+        <div class="contain-1120">
+            <div id="left">
+                <a href="http://www.northwestern.edu"><img src="https://common.northwestern.edu/v8/css/images/northwestern.svg" alt="Northwestern University" /><span class="hide-label">Northwestern University</span></a>
+            </div>
+            <div id="right">
+                <ul>
+                    <li><a href="http://www.preventivemedicine.northwestern.edu/">Preventive Medicine</a></li>
+                    <li><a href="http://www.mccormick.northwestern.edu/eecs/computer-science/">Computer Science</a></li>
+                    <li><a href="http://www.ncbi.nlm.nih.gov/pubmed">Pub Med</a></li>
+                    <li><a href="http://www.nalshurafa.com/">Lab Director's Page</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-bar contain-1120">
+        <div id="department">
+            <a href="https://muyangamigo.github.io/HAbitsLabWeb/index.html"><img src="assets/img/logo/habits2.png"></a>
+        </div>
+    </div>
+    <nav id="top-nav" aria-label="main navigation menu">
+        <div class="contain-1120">
+            <ul>
+              <li id="index.html">
+                  <a href="index.html">Home</a>
+              </li>
+              <li id="team.html">
+                  <a href="team.html">People</a>
+              </li>
 
-                  <li id="research.html">
-                      <a href="research.html">Research</a>
-                  </li>
-                  <li id="publications.html">
-                      <a href="publications.html">Publication</a>
-                  </li>
-                  <li id="portfolio.html">
-                    <a href="portfolio.html">Projects</a>
-                  </li>
-                  <li id="contact.html">
-                    <a href="contact.html">contact</a>
-                  </li>
-              </ul>
-              <!-- /.nav -->
-          </div>
-          <!-- /.navbar-collapse -->
-      </div>
-      <!-- /.container -->
-  </nav>
-  <!-- /.navbar -->
+              <li id="research.html">
+                  <a href="research.html">Research</a>
+              </li>
+              <li id="publications.html">
+                  <a href="publications.html">Publication</a>
+              </li>
+              <!-- <li id="blog.html">
+                  <a href="#">Code and Data</a>
+              </li> -->
+              <li id="portfolio.html">
+                <a href="portfolio.html">Projects</a>
+              </li>
+              <li id="contact.html">
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+        </div>
+    </nav>
   `);
 
   var id = "#" + page;
   var selected = document.getElementById(page);
-  selected.className += " active";
+  selected.className += "active";
   console.log(selected);
 }
