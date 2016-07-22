@@ -11,6 +11,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     color: #2c3e50;
 }
 
+p, li {
+  color: black;
+}
+
 iframe {
     border: 0;
 }
@@ -710,6 +714,11 @@ blockquote small {
     border: 1px solid #ecf0f1;
     border-top: 0;
     overflow: hidden;
+    height:150px
+}
+.portfolio-item .portfolio-details p {
+    color:black;
+    font-size: 16px;
 }
 
 .portfolio-item .portfolio-details h5 {
@@ -1284,6 +1293,11 @@ blockquote small {
     border: 1px solid #ecf0f1;
     border-top: 0;
 }
+
+.post-details p {
+    font-size: 16px;
+}
+
 .post-details .post-title:before {
     content: "";
     width: 50px;
@@ -1504,6 +1518,13 @@ blockquote small {
     border: 1px solid #ecf0f1;
     padding: 20px;
     border-top: 0;
+    height: 280px;
+}
+.member-details-2{
+    border: 1px solid #ecf0f1;
+    padding: 20px;
+    border-top: 0;
+    height: 180px;
 }
 .member-details .member-name {
     margin-top: 0;

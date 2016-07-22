@@ -48,7 +48,10 @@
                     </div>
                 </section> -->
                 <!-- /.page-title-wrapper -->
-                    <div class="container" style="padding-top:15px">
+                    <div class="container pad-25">
+                      <div class="subpage-title">
+                          <h5>Lab Publications</h5>
+                      </div>
                         <ul class="portfolio-filter nav nav-pills">
                             <li class="active"><a href="#" data-filter="*">All</a></li>
                             <li><a href="#" data-filter=".sensor">Sensor</a></li>
@@ -62,14 +65,13 @@
                         </ul>
                         <div id="isotope-publication">
                           <div class="list-group">
-
                               <div ng-repeat="publication in publications">
                             <!-- <div class="publication-selector {{publication.tag}}"> -->
                                 <div class="publication-selector {{publication.tag}}">
                                 <div class="list-group-item" style="width:1230px">
                                 <h4><a ng-href="{{publication.src}}" target="_blank">{{publication.title}}</a></h4>
-                                <p style="color:black">Published at: {{publication.conference}} &nbsp {{publication.date}} &nbsp <a ng-href="{{publication.download}}" target="_blank">[View PDF Paper]</a></p>
-                                <p style="color:black">{{publication.description}}</p>
+                                <p>Published at: {{publication.conference}} &nbsp {{publication.date}} &nbsp <a ng-href="{{publication.download}}" target="_blank">[View PDF Paper]</a></p>
+                                <p>{{publication.description}}</p>
                               </div>
                               </div>
                               </div>
