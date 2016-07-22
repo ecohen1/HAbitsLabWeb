@@ -6,8 +6,8 @@ function setFooter() {
             <div class="row">
                 <div class="col-md-4">
                     <!-- <div class="widget about-us"> -->
-                        <div class="footer-brand"><span>HAbits</span>Lab</div>
-                        <p>The HAbits lab focuses on testing, designing, developing and optimizing existing and novel sensing devices to better understand and improve habits.</p>
+                        <div class="footer-brand"><img alt="Brand" src="assets/img/logo/habits.png" style="margin-top:15px"></div>
+                        <p style="color:black">The HAbits lab focuses on testing, designing, developing and optimizing existing and novel sensing devices to better understand and improve habits.</p>
                     <!-- </div> -->
                 </div>
                     <!-- /.about-us -->
@@ -16,7 +16,7 @@ function setFooter() {
                         <div class="subpage-title">
                             <h5>Stay Connected</h5>
                         </div>
-                        <p>Follow Us on Social Medial</p>
+                        <p style="color:black">Follow Us on Social Medial</p>
                         <ul class="social-links">
                             <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
@@ -29,7 +29,8 @@ function setFooter() {
                 <div clss="col-md-4">
                     <div class="subpage-title">
                       <h5>Connections</h5>
-                      <p>The Habits Lab is Affiliated To Northwestern Feinberg School of Medcine and Northwestern McCormick School of Engineering.</p>
+                    </div>
+                      <p style="color:black">The Habits Lab is Affiliated To Northwestern Feinberg School of Medcine and Northwestern McCormick School of Engineering.</p>
                       <!-- <img class="img-responsive" src="assets/img/logo/NU.png" width="341", height="82"></img> -->
 
                         <!-- <div class="col-sm-6"> -->
@@ -38,8 +39,6 @@ function setFooter() {
                         <!-- <div class="col-sm-6"> -->
                           <a href="http://www.mccormick.northwestern.edu"><img class="responsive" src="assets/img/logo/McCormick.png" width="200" height="51"></img></a>
                         <!-- </div> -->
-
-                    </div>
                 </div>
                 <!-- /.col-md-3 -->
                 <!-- <div class="col-md-3">
