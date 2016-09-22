@@ -53,8 +53,13 @@ a:focus {
     width: 1260px;
   }
 }
-
-
+@media (min-width:1440px) {
+  #bannercontainer {
+    width: 1440px;
+    margin:auto;
+    display:block;
+  }
+}
 /* Lists
  * -------------------------- */
 .fa-ul {
