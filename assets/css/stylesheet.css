@@ -306,6 +306,9 @@ a:focus {
 
 /* Blockquotes
  * -------------------------- */
+blockquote {
+  font-size: 16px;
+}
 blockquote small {
   font-size: 13px;
 }
@@ -852,7 +855,7 @@ blockquote small {
 .recent-posts h5 small {
     display: block;
     margin-top: 7px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 /* Categories
@@ -1291,7 +1294,7 @@ blockquote small {
 .post-details {
     padding: 20px;
     border: 1px solid #ecf0f1;
-    border-top: 0;
+    /*border-top: 0;*/
 }
 
 .post-details p {
@@ -1623,28 +1626,47 @@ address {
 /* Action Box
  * -------------------------- */
 .action-box {
+    background-image:url(http://www.webdesigndev.com/wp-content/uploads/2013/06/Corrugation-pattern.jpg);
     position: relative;
     padding: 30px;
     text-align: center;
     box-shadow: 0 0 5px #ecf0f1;
     border: 1px solid #ecf0f1;
+    height:200px;
 }
 
 .action-box h3 {
     margin-top: 0;
 }
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
 
 @media (min-width: 768px) {
     .action-box {
         text-align: left;
-        padding-right: 200px;
+        padding-right: 20px;
     }
 
     .action-box a.btn {
         position: absolute;
-        top: 50%;
-        right: 30px;
-        margin-top: -21px;
+        top: 72%;
+        right: 20px;
+        margin-top: 11px;
     }
 }
 
