@@ -10,9 +10,6 @@ function setNav(){
             </div>
             <div id="right">
                 <ul>
-                    <!--<li><a href="http://www.preventivemedicine.northwestern.edu/">Preventive Medicine</a></li>
-                    <li><a href="http://www.mccormick.northwestern.edu/eecs/computer-science/">Computer Science</a></li>
-                    <li><a href="http://www.ncbi.nlm.nih.gov/pubmed">Pub Med</a></li>-->
                     <li><a href="http://www.nalshurafa.com/">Lab Director's Page</a></li>
                 </ul>
             </div>
@@ -47,6 +44,9 @@ function setNav(){
               </li>
               <li id="contact.html">
                 <a href="contact.html">Contact</a>
+              </li>
+              <li id="news.html">
+                <a href="news.html">Latest News</a>
               </li>
             </ul>
         </div>
