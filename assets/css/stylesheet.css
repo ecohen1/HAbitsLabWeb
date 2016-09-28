@@ -360,7 +360,6 @@ hr.small {
     font-size: 13px;
     font-weight: 700;
     color: inherit !important;
-    text-transform: uppercase;
 }
 .panel-title > a, .panel-title > a:hover, .panel-title > a:focus {
   color: inherit !important;

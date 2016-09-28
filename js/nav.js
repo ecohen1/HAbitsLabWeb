@@ -43,7 +43,7 @@ function setNav(){
                 <a href="portfolio.html">Projects</a>
               </li>
               <li id="contact.html">
-                <a href="contact.html">Contact</a>
+                <a href="contact.html">Contact/Join</a>
               </li>
               <li id="news.html">
                 <a href="news.html">Latest News</a>
