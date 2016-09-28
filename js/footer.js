@@ -9,7 +9,7 @@ function setFooter() {
                       <h5>The Lab</h5>
                   </div>
                   <p>We design, build, develop, and analyze. We are habits lab.</p>
-                  <img alt="Brand" src="assets/img/logo/habits.png">
+                  <!-- <img alt="Brand" src="assets/img/logo/habits.png"> -->
                 </div>
                     <!-- /.about-us -->
                 <div class="col-md-3">
