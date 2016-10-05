@@ -29,8 +29,8 @@ function setFooter() {
                     <div class="subpage-title">
                       <h5>Connections</h5>
                     </div>
-                      <p >The Habits Lab is Affiliated To Northwestern Feinberg School of Medcine and Northwestern McCormick School of Engineering.</p>
-                          <a href="http://www.feinberg.northwestern.edu"><img class="responsive" src="assets/img/logo/Feinberg.png" width="200" height="43"></img></a>&nbsp&nbsp&nbsp
+                      <p >The Habits Lab is Affiliated To Northwestern University Feinberg School of Medicine and Northwestern University McCormick School of Engineering.</p>
+                          <a href="http://www.feinberg.northwestern.edu"><img class="responsive" src="assets/img/logo/Feinberg.png"></img></a>&nbsp&nbsp&nbsp
                           <a href="http://www.mccormick.northwestern.edu"><img class="responsive" src="assets/img/logo/McCormick.png" width="200" height="51"></img></a>
                 </div>
             </div>
