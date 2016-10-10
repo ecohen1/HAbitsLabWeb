@@ -8,7 +8,7 @@ function setFooter() {
                   <div class="subpage-title">
                       <h5>The Lab</h5>
                   </div>
-                  <p>We design, build, develop, and analyze. We are habits lab.</p>
+                  <p>We design, build, develop, and analyze. We are the HAbits Lab.</p>
                   <!-- <img alt="Brand" src="assets/img/logo/habits.png"> -->
                 </div>
                     <!-- /.about-us -->
@@ -16,7 +16,7 @@ function setFooter() {
                     <div class="subpage-title">
                         <h5>Stay Connected</h5>
                     </div>
-                    <p>Follow Us on Social Medial</p>
+                    <p>Follow us on social media!</p>
                     <ul class="social-links">
                         <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
                         <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
@@ -29,9 +29,9 @@ function setFooter() {
                     <div class="subpage-title">
                       <h5>Connections</h5>
                     </div>
-                      <p >The Habits Lab is Affiliated To Northwestern University Feinberg School of Medicine and Northwestern University McCormick School of Engineering.</p>
-                          <a href="http://www.feinberg.northwestern.edu"><img class="responsive" src="assets/img/logo/Feinberg.png" width="322" height="76"></img></a>
-                          <a href="http://www.mccormick.northwestern.edu"><img class="responsive" src="assets/img/logo/McCormick.png" width="264" height="68"></img></a>
+                      <p >The HAbits Lab is Affiliated To Northwestern University Feinberg School of Medicine and Northwestern University McCormick School of Engineering.</p>
+                          <a href="http://www.feinberg.northwestern.edu"><img class="responsive" src="assets/img/logo/Feinberg.png" width="290" height="65"></img></a>
+                          <a href="http://www.mccormick.northwestern.edu"><img class="responsive" src="assets/img/logo/McCormick.png" width="290" height="65" style="padding-left:10px;"></img></a>
                 </div>
             </div>
             <!-- /.row -->
