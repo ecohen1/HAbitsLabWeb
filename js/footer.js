@@ -1,4 +1,5 @@
 function setFooter() {
+    console.log('Setting footer...');
   $("#appendFooter").append(
     `
     <footer id="footer-1" class="footer">
