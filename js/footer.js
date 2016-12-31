@@ -9,7 +9,7 @@ function setFooter() {
                   <div class="subpage-title">
                       <h5>The Lab</h5>
                   </div>
-                  <p>We design, build, develop, and analyze. We are the HAbits Lab.</p>
+                  <p>We design, build, develop, and analyze. We are HABits Lab.</p>
                   <!-- <img alt="Brand" src="assets/img/logo/habits.png"> -->
                 </div>
                     <!-- /.about-us -->
@@ -30,7 +30,7 @@ function setFooter() {
                     <div class="subpage-title">
                       <h5>Connections</h5>
                     </div>
-                      <p >The HAbits Lab is Affiliated To Northwestern University Feinberg School of Medicine and Northwestern University McCormick School of Engineering.</p>
+                      <p>HABits Lab is Affiliated To Northwestern University Feinberg School of Medicine and Northwestern University McCormick School of Engineering.</p>
                           <a href="http://www.feinberg.northwestern.edu"><img class="responsive" src="assets/img/logo/Feinberg.png" width="290" height="65"></img></a>
                           <a href="http://www.mccormick.northwestern.edu"><img class="responsive" src="assets/img/logo/McCormick.png" width="290" height="65" style="padding-left:10px;"></img></a>
                 </div>
@@ -44,7 +44,7 @@ function setFooter() {
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-5 footer-info-wrapper">
-                    <span>The HAbits Lab © COPYRIGHT 2016 NORTHWESTERN UNIVERSITY</span>
+                    <span>HABits Lab © COPYRIGHT 2016 NORTHWESTERN UNIVERSITY</span>
                 </div>
                 <!-- /.footer-info-wrapper -->
                 <div class="col-xs-12 col-md-5 footer-info-wrapper">
