@@ -17,7 +17,7 @@ function setNav(){
     </div>
     <div class="bottom-bar contain-1120">
         <div id="department">
-            <h1><a href="https://muyangamigo.github.io/HAbitsLabWeb/index.html">The HAbits Lab</a></h1>
+            <h1><a href="https://muyangamigo.github.io/HAbitsLabWeb/index.html">HAbits Lab</a></h1>
         </div>
     </div>
     <nav id="top-nav" aria-label="main navigation menu">
