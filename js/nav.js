@@ -36,6 +36,9 @@ function setNav(){
               <li id="publications.html">
                   <a href="publications.html">Publication</a>
               </li>
+              <li id="download.html">
+                  <a href="download.html">Download</a>
+              </li>
               <!-- <li id="blog.html">
                   <a href="#">Code and Data</a>
               </li> -->
