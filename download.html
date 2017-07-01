@@ -60,49 +60,15 @@
                           <h5>Public Dataset of Accelerometer and Gyroscope Data for Human Feeding Gesture Detection</h5>
                       </div>
 
-                      <h5>Download: <u><a href="https://drive.google.com/file/d/0B31ueLWlMaKlZXhQMTJvMmZvS0U/view?usp=sharing">ZIP</a></u>&nbsp;&nbsp;<u><a href="https://drive.google.com/file/d/0B31ueLWlMaKlcjdlT25Rd2hEdE0/view?usp=sharing">TAR</a></u></h5>
+                      <h5>Download: <u><a href="https://drive.google.com/file/d/0B31ueLWlMaKlZFd2bXJwMDNaTEE/view?usp=sharing">ZIP</a></u>&nbsp;&nbsp;<u><a href="https://drive.google.com/file/d/0B31ueLWlMaKlcVpiWDA3VDRscTg/view?usp=sharing">TAR</a></u></h5>
                       <br><br>
 
-<u>1. What is it?</u>
+<u>Abstract</u>
 <br><br>
-The Public Dataset of Accelerometer and Gyroscope Data for Human Feeding Gesture Detection is a public collection of labelled accelerometer and gyroscope data recordings to be used for the creation and validation of acceleration and gyroscope models of human feeding primitives.
-<br><br>
-Three protocols/experiments are followed for collection of the data sets: inlab highly structured, inlab structured and inlab unstructured.  
-<br><br>
-Participants (10 in total, 1 female and 9 males, mean age=24.2 years) were requested to wear a wrist-worn sensor (Microsoft Band 2) on their dominant hand. A Logitech C615 HD webcam camera was placed on the side of the non-dominant hand in order to see the plate, both hands and the participants face. Three trained researchers are used to correctly label the video collected into feeding and non-feeding gestures. Chronoviz was used to label data. 
-<br><br>
-Although the experiments primarily focus on detecting feeding gestures, the variety of the labels include start and end times for: eating, drinking, feeding gesture (hand to mouth and back to food), and non-feeding gesture (hand up, and back down but not feeding related). All the participants were right-handed, although a few did consume food with their left hand during unstructured eating, and as in this study we do not capture the participants' use of their non-dominant hands, feeding gestures performed with the left-hand represent uncaptured data. The entire session was recorded using a camera. The annotated recordings serve as ground truth for our models. The recorded data is annotated with time-synchronized ground truth labels.
-<br><br>
-In the highly structured test, participants are asked to perform 10 gestures of each of the activities using only a utensil and imaginary food (no food is presented in this experiment). The participants are asked to follow a script instructing them when to perform each gesture, separating each gesture by 10 seconds of motionless activity. This makes it possible for a simple script to filter out the motion into perfect feeding gesture segments. This is essential to see if food is necessary to train a model, or whether pretend eating is sufficient.
-<br><br>
-In the in-lab structured test, participants performed all the activities (eating and non-eating)(randomized for each participant) for exactly two minutes each. The participants were instructed to follow a script on a developed interface, which reminded them of the current activity, and instructed them to consume the foods as freely as possible. This test reflected more natural feeding gestures from each participant. Caloric intake was calculated by weighing food before and after the experiment and the number of feeding gestures was obtained from the video. The number of calories and the number of gestures were recorded for each participant. At the end of the experiment participants were asked about the foods they like to eat and what T.V. show or movie they would like to watch. We used that information to tailor the unstructured experiment for each participant.
-<br><br>
-Participants were asked to return to the lab on another date in the evening to eat food in a lab setting. After putting on the sensors, they were asked if they were full; if they were not full, they were provided with a meal of their choice to eat their fill, then they were taken to a room with a big screen T.V. to watch their favorite T.V. show/movie. If they were full, then they were led directly to the T.V. room. While watching T.V., participants were presented with their favorite snacks (identified in in-lab structured test). During both the pre-load and snacking phases participants provided a large variety of gestures such as unwrapping food and finger licking that challenged the robustness of our algorithms.
+Recordings of 10 volunteers performing 18 feeding and non-feeding gestures while carrying a single wrist-worn watch with tri-axial accelerometer and gyroscope sensor on their dominant hand.
 <br><br>
 
-<u>2. Version</u>
-<br><br>
-Version: 1
-Released on: 06/21/2017
-<br><br>
-<u>3. Documentation</u>
-<br><br>
-Up-to-date documentation for this release is provided in the file MANUAL.txt
-<br><br>
-<u>4. Installation and usage</u>
-<br><br>
-This dataset does not require any installation and can be viewed with spreadsheet application that can open .csv files.
-<br><br>
-<u>5. Licensing</u>
-<br><br>
-This dataset is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY, including the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-The authors allow the users of the Public Dataset of Accelerometer and Gyroscope Data for Human feeding gestures detection to use and modify it for their own research. Any commercial application, redistribution, etc... has to be arranged between users and authors individually.
-<br><br>
-For further license information, please contact the authors.
-<br><br>
-<u>6. Authors contacts</u>
-<br><br>
-If you want to be informed about db updates and new code releases, obtain further information about the provided db, or contribute to its development please write to:
+<u>Source</u>
 <br><br>
 <div style="margin-left: 10px">
 HABits Lab
@@ -116,7 +82,36 @@ Phone: (312) 503-4517
 nabil@northwestern.edu
 </div>
 <br><br>
-                        
+
+<u>Data Set Information</u>
+<br><br>
+The Public Dataset of Accelerometer and Gyroscope Data for Human Feeding Gesture Detection is a public collection of labelled accelerometer and gyroscope data recordings to be used for the creation and validation of acceleration and gyroscope models of human feeding primitives. Three protocols/experiments are followed for collection of the data sets: inlab highly structured, inlab structured and inlab unstructured. Participants (10 in total, 1 female and 9 males, mean age=24.2 years) were requested to wear a wrist-worn sensor (Microsoft Band 2) on their dominant hand. A Logitech C615 HD webcam camera was placed on the side of the non-dominant hand in order to see the plate, both hands and the participants face. Three trained researchers are used to correctly label the video collected into feeding and non-feeding gestures. Chronoviz was used to label data. Accelerometer specifications are detailed in the file MANUAL.TXT inside the Dataset folder. Detailed documentation about the dataset is provided in the files README.TXT and MANUAL.TXT inside the Dataset folder.
+<br><br>
+
+<u>Attribute Information</u>
+<br><br>
+Each file in the dataset follows the following naming convention:
+<br><br>
+
+For inlabHiStr:
+<ul>
+<li>Time: Timestamp of the starting moment of the recording in the format [YYYY-MM-DD-HH-MM-SS]</li>
+<li>Linear_Accel_x: Linear Acceleration in x-axis.</li>
+<li>Linear_Accel_y: Linear Acceleration in y-axis.</li>
+<li>Linear_Accel_z: Linear Acceleration in z-axis.</li>
+<li>Angular_Velocity_x: Angular Velocity in x-axis.</li>
+<li>Angular_Velocity_y: Angular Velocity in y-axis.</li>
+<li>Angular_Velocity_z: Angular Velocity in z-axis.</li>
+</ul>
+
+<br><br>
+For inlabStr and inlabUnstr:
+<ul>
+<li>StartTime: Start time of each activity.</li>
+<li>EndTime: End time of each activity.</li>
+<li>Annotation: Annotated activity.</li>
+<li>MainCategory: Main activity corresponding to the annotated activity.</li>
+</ul>                    
 
                       </div><!-- /#container -->
                       <div id="appendFooter" style="padding-top:25px"></div>
